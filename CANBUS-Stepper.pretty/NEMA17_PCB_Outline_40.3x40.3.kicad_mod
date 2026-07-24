@@ -1,0 +1,35 @@
+(footprint "NEMA17_PCB_Outline_40.3x40.3"
+  (version 20240108)
+  (generator "pcbnew")
+  (layer "F.Cu")
+  (property "Reference" "REF**" (at 0 -22.6 0)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "NEMA17_PCB_Outline_40.3x40.3" (at 0 22.6 0)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Footprint" "NEMA17_PCB_Outline_40.3x40.3" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+  (property "Description" "NEMA 17 Stepper Motor PCB Edge.Cuts Outline (40.3mm x 40.3mm, 1mm offset, 31mm M3 holes, Center (0,0))" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+
+  (attr board_only exclude_from_pos_files exclude_from_bom)
+
+  (fp_line (start -17.6500 -20.1500) (end 17.6500 -20.1500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_line (start 20.1500 -17.6500) (end 20.1500 17.6500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_line (start 17.6500 20.1500) (end -17.6500 20.1500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_line (start -20.1500 17.6500) (end -20.1500 -17.6500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+
+  (fp_arc (start 17.6500 -20.1500) (mid 19.4178 -19.4178) (end 20.1500 -17.6500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_arc (start 20.1500 17.6500) (mid 19.4178 19.4178) (end 17.6500 20.1500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_arc (start -17.6500 20.1500) (mid -19.4178 19.4178) (end -20.1500 17.6500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+  (fp_arc (start -20.1500 -17.6500) (mid -19.4178 -19.4178) (end -17.6500 -20.1500) (stroke (width 0.1) (type default)) (layer "Edge.Cuts"))
+
+  (pad "1" np_thru_hole circle (at -15.50 -15.50) (size 3.20 3.20) (drill 3.20) (layers "*.Cu" "*.Mask"))
+  (pad "2" np_thru_hole circle (at 15.50 -15.50) (size 3.20 3.20) (drill 3.20) (layers "*.Cu" "*.Mask"))
+  (pad "3" np_thru_hole circle (at -15.50 15.50) (size 3.20 3.20) (drill 3.20) (layers "*.Cu" "*.Mask"))
+  (pad "4" np_thru_hole circle (at 15.50 15.50) (size 3.20 3.20) (drill 3.20) (layers "*.Cu" "*.Mask"))
+
+  (fp_circle (center 0 0) (end 0 11) (stroke (width 0.15) (type default)) (layer "F.SilkS"))
+  (fp_circle (center 0 0) (end 0 11) (stroke (width 0.15) (type default)) (layer "B.SilkS"))
+  (fp_circle (center 0 0) (end 0 15.5) (stroke (width 0.1) (type dash)) (layer "Dwgs.User"))
+)

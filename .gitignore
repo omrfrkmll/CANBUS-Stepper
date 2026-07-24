@@ -1,0 +1,8 @@
+# KiCad temporary & backup files
+*.bak
+*-backups/
+*-drc.rpt
+*-erc.rpt
+*.net
+~*.lck
+*.tmp
