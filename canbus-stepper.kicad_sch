@@ -7311,7 +7311,7 @@
 				)
 			)
 		)
-		(property "Value" "ME6211C33"
+		(property "Value" "AP2112K-3.3TRG1"
 			(at 254.79 268.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8328,7 +8328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG"
+		(property "Footprint" "CANBUS-Stepper:SW_TS31-46-35-BK-B-160-RA-SMT-TR"
 			(at 179.79 113.19 0)
 			(hide yes)
 			(show_name no)
@@ -9022,7 +9022,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG"
+		(property "Footprint" "CANBUS-Stepper:SW_TS31-46-35-BK-B-160-RA-SMT-TR"
 			(at 179.79 103.19 0)
 			(hide yes)
 			(show_name no)
@@ -16330,7 +16330,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG"
+		(property "Footprint" "CANBUS-Stepper:SW_TL3365AF180QG"
 			(at 264.79 170.69 0)
 			(hide yes)
 			(show_name no)
@@ -18144,7 +18144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_E-Switch_TL3301NxxxxxG"
+		(property "Footprint" "CANBUS-Stepper:SW_TL3365AF180QG"
 			(at 264.79 168.19 0)
 			(hide yes)
 			(show_name no)
