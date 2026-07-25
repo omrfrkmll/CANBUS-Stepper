@@ -3637,7 +3637,6 @@
 				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_6" (effects (font (size 1.27 1.27)))))
 				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_7" (effects (font (size 1.27 1.27)))))
 				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_8" (effects (font (size 1.27 1.27)))))
-				)
 			)
 			(embedded_fonts no)
 		)
@@ -21186,3 +21185,4 @@
 	(label "USB_D-" (at 50.0 65.0 0) (effects (font (size 1.27 1.27))))
 	(label "VBUS" (at 50.0 52.0 0) (effects (font (size 1.27 1.27))))
 	(label "GND" (at 50.0 68.0 0) (effects (font (size 1.27 1.27))))
+)
