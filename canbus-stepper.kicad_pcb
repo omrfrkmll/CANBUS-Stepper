@@ -15099,4 +15099,193 @@
 		(members "66e5d40e-92ca-4b92-9e07-619d1aaf074d" "e22fb99d-927e-41ca-9b6d-68f22259394a")
 	)
 	(embedded_fonts no)
+  (footprint "Fuse:Fuse_1812_4532Metric"
+    (layer "F.Cu")
+    (uuid "1f702e32-01f7-46f4-a5d5-37b0ec9063bc")
+    (at 120.00 100.00)
+    (property "Reference" "F1"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "fec75813-72aa-4fdc-9210-7b2910f3244d")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "3.5A 30V PPTC"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "f935aa3f-45f3-492f-92da-27c5ac0cab9c")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+    (layer "F.Cu")
+    (uuid "e47eb051-9870-4775-9075-a8ab78fe5990")
+    (at 132.00 100.00)
+    (property "Reference" "Q1"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "acd08615-d2e3-41c9-a92b-178dc96e6917")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "AO4407A"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "b732a57a-b806-4124-bed8-a8a911cf4da6")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Resistor_SMD:R_0603_1608Metric"
+    (layer "F.Cu")
+    (uuid "2a8f466c-f465-4244-b3ba-735ab787bafd")
+    (at 144.00 100.00)
+    (property "Reference" "R18"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "d5d066cf-7e8e-401c-a286-e4f6427b728a")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "10k"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "df9780f0-4c88-45e2-9663-38017fed23d7")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Diode_SMD:D_SOT-23_ANK"
+    (layer "F.Cu")
+    (uuid "f492a1d5-ff22-462a-85c4-33cbdae88761")
+    (at 156.00 100.00)
+    (property "Reference" "D5"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "fe908bd1-9be1-40ad-9231-cd69a2163875")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "BZX84C12V"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "0757f3dc-be09-47c3-96ae-b7b752b9dc4e")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Fuse:Fuse_0805_2012Metric"
+    (layer "F.Cu")
+    (uuid "f34687a5-bfcb-4aac-90a5-f0a88e4d5822")
+    (at 168.00 100.00)
+    (property "Reference" "F2"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "47aa1ec9-9737-44de-a6fa-2dd7fd94b379")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "500mA 16V PPTC"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "4dfd00ca-0df0-4ef2-84d7-177fd07cc177")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Package_TO_SOT_SMD:SOT-23"
+    (layer "F.Cu")
+    (uuid "3b1c7f1a-441c-4441-ae11-fb437a15ebfc")
+    (at 180.00 100.00)
+    (property "Reference" "D4"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "1781736d-f6d8-4d63-a674-f310f2e53ff7")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "PESD1CAN"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "3d461721-6180-4684-a132-e101d54896d4")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
+  (footprint "Package_TO_SOT_SMD:SOT-23-6"
+    (layer "F.Cu")
+    (uuid "a206e1ef-4f59-4b1a-bf70-2c4ebf54ac5e")
+    (at 192.00 100.00)
+    (property "Reference" "U7"
+      (at 0 -2.5 0)
+      (layer "F.SilkS")
+      (uuid "86b5bffd-a753-44d2-8d5b-798e5f24a46d")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+    (property "Value" "USBLC6-2SC6"
+      (at 0 2.5 0)
+      (layer "F.Fab")
+      (uuid "fbc0b91b-c18c-4529-a427-69457e2f2f4e")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)
+        )
+      )
+    )
+  )
 )
