@@ -158,7 +158,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -192,9 +192,57 @@
 				)
 			)
 			(symbol "Conn_01x04_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
-					(start -3.81 -6.35)
-					(end 3.81 6.35)
+					(start -1.27 -6.35)
+					(end 1.27 3.81)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -206,8 +254,8 @@
 			)
 			(symbol "Conn_01x04_1_1"
 				(pin passive line
-					(at 6.35 3.81 180)
-					(length 2.54)
+					(at -5.08 2.54 0)
+					(length 3.81)
 					(name "Pin_1"
 						(effects
 							(font
@@ -224,8 +272,8 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 1.27 180)
-					(length 2.54)
+					(at -5.08 0 0)
+					(length 3.81)
 					(name "Pin_2"
 						(effects
 							(font
@@ -242,8 +290,8 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 -1.27 180)
-					(length 2.54)
+					(at -5.08 -2.54 0)
+					(length 3.81)
 					(name "Pin_3"
 						(effects
 							(font
@@ -260,8 +308,8 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 -3.81 180)
-					(length 2.54)
+					(at -5.08 -5.08 0)
+					(length 3.81)
 					(name "Pin_4"
 						(effects
 							(font
@@ -277,28 +325,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -8.89 90)
-					(length 2.54)
-					(name "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line (at 0 -12.7 90) (length 2.54) (name "MP" (effects (font (size 1.27 1.27)))) (number "MP1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -12.7 90) (length 2.54) (name "MP" (effects (font (size 1.27 1.27)))) (number "MP2" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -12.7 90) (length 2.54) (name "SH" (effects (font (size 1.27 1.27)))) (number "SH1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -12.7 90) (length 2.54) (name "SH" (effects (font (size 1.27 1.27)))) (number "SH2" (effects (font (size 1.27 1.27)))))
 			)
 			(embedded_fonts no)
 		)
@@ -4266,9 +4292,9 @@
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
+			(duplicate_pin_numbers_are_jumpers yes)
 			(property "Reference" "SW"
-				(at 0 3.175 0)
+				(at 1.27 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4278,7 +4304,7 @@
 				)
 			)
 			(property "Value" "SW_Push"
-				(at 0 -3.175 0)
+				(at 1.27 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4309,7 +4335,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4321,9 +4347,31 @@
 				)
 			)
 			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy 1.27 1.27)
+						(xy -1.524 1.27) (xy 1.524 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -4333,20 +4381,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center -1.27 0)
-					(radius 0.381)
-					(stroke
-						(width 0.254)
-						(type default)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 2.54)
 					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 0.381)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4358,7 +4396,7 @@
 			)
 			(symbol "SW_Push_1_1"
 				(pin passive line
-					(at -3.81 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -4376,7 +4414,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -4393,10 +4431,6 @@
 						)
 					)
 				)
-				(pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "G1" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -3.81 90) (length 1.27) (name "~" (effects (font (size 1.27 1.27)))) (number "G2" (effects (font (size 1.27 1.27)))))
 			)
 			(embedded_fonts no)
 		)
