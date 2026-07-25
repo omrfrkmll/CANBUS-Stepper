@@ -146,7 +146,7 @@
 				)
 			)
 		)
-		(property "Value" "C10"
+		(property "Value" "22uF"
 			(at 0 1.68 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -294,7 +294,7 @@
 				)
 			)
 		)
-		(property "Value" "R15"
+		(property "Value" "5.1k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "591539c3-3871-49e4-957c-8d11cd4c0a61")
@@ -441,7 +441,7 @@
 				)
 			)
 		)
-		(property "Value" "C15"
+		(property "Value" "4.7uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4ec679d5-531f-479b-ab95-5fafaafb9773")
@@ -588,7 +588,7 @@
 				)
 			)
 		)
-		(property "Value" "R16"
+		(property "Value" "5.1k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "81ec86db-1d4f-44ce-be60-687257d7d095")
@@ -735,7 +735,7 @@
 				)
 			)
 		)
-		(property "Value" "R6"
+		(property "Value" "1k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "49b3a9c8-d7d3-4581-a0a9-458261e4b016")
@@ -882,7 +882,7 @@
 				)
 			)
 		)
-		(property "Value" "C2"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "03f0ceab-545c-4b77-8b5a-c5693a46457a")
@@ -1029,7 +1029,7 @@
 				)
 			)
 		)
-		(property "Value" "R17"
+		(property "Value" "390k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "b4e9670a-7ee3-441f-a5bf-7e129730bb32")
@@ -1923,7 +1923,7 @@
 				)
 			)
 		)
-		(property "Value" "R13"
+		(property "Value" "1k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "7323ab04-92fb-4e83-aa40-ce6e90a38942")
@@ -2070,7 +2070,7 @@
 				)
 			)
 		)
-		(property "Value" "C8"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "2b0bb92b-bca0-4229-a477-b9436245da45")
@@ -2217,7 +2217,7 @@
 				)
 			)
 		)
-		(property "Value" "R2"
+		(property "Value" "10k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(uuid "d0e8c4a6-100b-4d4a-91ba-cc985c17bbd8")
@@ -2350,7 +2350,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-8"
 		(layer "F.Cu")
 		(uuid "49d6a060-c15d-4c3f-be18-c263c8143133")
-		(at 156.525 113.6375 90)
+		(at 157.025 112.8625 90)
 		(descr "SOT, 8 Pin (JEDEC MO-178 Var BA https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U5"
@@ -3644,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Value" "C13"
+		(property "Value" "1uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "8463b779-e161-4916-983f-a5c5d6ae47eb")
@@ -3791,7 +3791,7 @@
 				)
 			)
 		)
-		(property "Value" "R4"
+		(property "Value" "0.11R"
 			(at 0 1.83 90)
 			(layer "F.Fab")
 			(uuid "015c9120-84e7-4d70-b15c-91eebc5310b6")
@@ -4483,7 +4483,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_6.3x5.8"
 		(layer "F.Cu")
 		(uuid "83092dec-82a9-427d-8623-0005d0ac2349")
-		(at 150.031678 115.173177)
+		(at 150.3 115.173177)
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x5.8mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C_BULK1"
@@ -4935,7 +4935,7 @@
 				)
 			)
 		)
-		(property "Value" "R10"
+		(property "Value" "100k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "40507008-792a-40e3-9eab-eaccbb32beb4")
@@ -5082,7 +5082,7 @@
 				)
 			)
 		)
-		(property "Value" "C14"
+		(property "Value" "4.7uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "e8a196a9-6b65-46e5-9fea-1f51c863d34e")
@@ -5775,7 +5775,7 @@
 				)
 			)
 		)
-		(property "Value" "R12"
+		(property "Value" "10k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "20c7e02a-6b38-4ec7-ac3f-5c54b65ba0f6")
@@ -5922,7 +5922,7 @@
 				)
 			)
 		)
-		(property "Value" "R14"
+		(property "Value" "1k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "43cd1336-6bc6-44f7-8fe8-759132616983")
@@ -7118,7 +7118,7 @@
 				)
 			)
 		)
-		(property "Value" "C3"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3580f805-1f6d-4342-b1ed-99ec3539aaf2")
@@ -7265,7 +7265,7 @@
 				)
 			)
 		)
-		(property "Value" "C4"
+		(property "Value" "100nF 50V"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "7453634b-f957-4e67-9051-5a68041adebf")
@@ -7412,7 +7412,7 @@
 				)
 			)
 		)
-		(property "Value" "C9"
+		(property "Value" "10uF 50V"
 			(at 0 1.85 180)
 			(layer "F.Fab")
 			(uuid "d682d64d-8a3c-49b8-b598-b362d450b372")
@@ -8305,7 +8305,7 @@
 				)
 			)
 		)
-		(property "Value" "R9"
+		(property "Value" "120R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "b59089b4-f71f-4a7a-b526-a5565083f322")
@@ -8716,7 +8716,7 @@
 				)
 			)
 		)
-		(property "Value" "R5"
+		(property "Value" "0.11R"
 			(at 0 1.83 270)
 			(layer "F.Fab")
 			(uuid "51ce2660-6dc9-4bbc-bf40-244d6382ae5b")
@@ -9223,7 +9223,7 @@
 				)
 			)
 		)
-		(property "Value" "C11"
+		(property "Value" "1uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "7f546334-42b6-4b65-9158-51a2b5a87d04")
@@ -9370,7 +9370,7 @@
 				)
 			)
 		)
-		(property "Value" "C1"
+		(property "Value" "1uF"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "1a0fbcec-e7ba-4c3c-86d1-84a35f9208f8")
@@ -9517,7 +9517,7 @@
 				)
 			)
 		)
-		(property "Value" "C7"
+		(property "Value" "100nF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "c776488b-1bd8-4826-9738-8aacd2da832c")
@@ -9664,7 +9664,7 @@
 				)
 			)
 		)
-		(property "Value" "R8"
+		(property "Value" "4.7k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "43558c39-0f99-4b59-b9eb-8b5ddba6d092")
@@ -10252,7 +10252,7 @@
 				)
 			)
 		)
-		(property "Value" "R1"
+		(property "Value" "10k"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(uuid "73d63fd3-e2bc-4325-8488-fda5a01ca954")
@@ -10399,7 +10399,7 @@
 				)
 			)
 		)
-		(property "Value" "R11"
+		(property "Value" "10k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "fba195ae-c252-4c3d-a4a0-078d98538161")
@@ -10864,7 +10864,7 @@
 				)
 			)
 		)
-		(property "Value" "C6"
+		(property "Value" "100nF"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(uuid "7d4de0a2-dee3-4ec7-9fcb-6df02119ef7b")
@@ -11888,7 +11888,7 @@
 				)
 			)
 		)
-		(property "Value" "R3"
+		(property "Value" "10k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "b1df4edc-08df-455b-905f-1565f5c96570")
@@ -12035,7 +12035,7 @@
 				)
 			)
 		)
-		(property "Value" "C5"
+		(property "Value" "22nF 50V"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(uuid "2ba46ea8-36fe-4a57-838e-431a6932c22e")
@@ -12182,7 +12182,7 @@
 				)
 			)
 		)
-		(property "Value" "R7"
+		(property "Value" "4.7k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "019d14e9-cd25-4d9e-9c97-1584ce23f01a")
@@ -12329,7 +12329,7 @@
 				)
 			)
 		)
-		(property "Value" "C12"
+		(property "Value" "1uF"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a0f5829a-b333-4f45-b8c1-64f78e5554ba")

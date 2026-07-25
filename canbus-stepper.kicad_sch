@@ -7588,7 +7588,7 @@
 				)
 			)
 		)
-		(property "Value" "R17"
+		(property "Value" "390k"
 			(at 487.93 253.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7742,7 +7742,7 @@
 				)
 			)
 		)
-		(property "Value" "R9"
+		(property "Value" "120R"
 			(at 337.91 195.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8756,7 +8756,7 @@
 				)
 			)
 		)
-		(property "Value" "R10"
+		(property "Value" "100k"
 			(at 82.89 112.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8910,7 +8910,7 @@
 				)
 			)
 		)
-		(property "Value" "C13"
+		(property "Value" "1uF"
 			(at 497.93 233.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9450,7 +9450,7 @@
 				)
 			)
 		)
-		(property "Value" "C4"
+		(property "Value" "100nF 50V"
 			(at 282.59 61.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9604,7 +9604,7 @@
 				)
 			)
 		)
-		(property "Value" "R11"
+		(property "Value" "10k"
 			(at 69.31 110.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9758,7 +9758,7 @@
 				)
 			)
 		)
-		(property "Value" "R1"
+		(property "Value" "10k"
 			(at 102.89 72.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10066,7 +10066,7 @@
 				)
 			)
 		)
-		(property "Value" "C2"
+		(property "Value" "100nF"
 			(at 117.57 92.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10144,7 +10144,7 @@
 				)
 			)
 		)
-		(property "Value" "C7"
+		(property "Value" "100nF"
 			(at 469.36 74.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10906,7 +10906,7 @@
 				)
 			)
 		)
-		(property "Value" "R2"
+		(property "Value" "10k"
 			(at 102.89 82.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11232,7 +11232,7 @@
 				)
 			)
 		)
-		(property "Value" "R16"
+		(property "Value" "5.1k"
 			(at 57.88 82.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12155,7 +12155,7 @@
 				)
 			)
 		)
-		(property "Value" "C6"
+		(property "Value" "100nF"
 			(at 287.59 61.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12385,7 +12385,7 @@
 				)
 			)
 		)
-		(property "Value" "R14"
+		(property "Value" "1k"
 			(at 211.55 108.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12539,7 +12539,7 @@
 				)
 			)
 		)
-		(property "Value" "R13"
+		(property "Value" "1k"
 			(at 202.66 108.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12934,7 +12934,7 @@
 				)
 			)
 		)
-		(property "Value" "C11"
+		(property "Value" "1uF"
 			(at 236.71 200.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13164,7 +13164,7 @@
 				)
 			)
 		)
-		(property "Value" "C1"
+		(property "Value" "1uF"
 			(at 117.57 70.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13318,7 +13318,7 @@
 				)
 			)
 		)
-		(property "Value" "C14"
+		(property "Value" "4.7uF"
 			(at 502.93 253.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14282,7 +14282,7 @@
 				)
 			)
 		)
-		(property "Value" "C15"
+		(property "Value" "4.7uF"
 			(at 507.93 253.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15457,7 +15457,7 @@
 				)
 			)
 		)
-		(property "Value" "C5"
+		(property "Value" "22nF 50V"
 			(at 356.33 67.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15611,7 +15611,7 @@
 				)
 			)
 		)
-		(property "Value" "R7"
+		(property "Value" "4.7k"
 			(at 518.89 74.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16145,7 +16145,7 @@
 				)
 			)
 		)
-		(property "Value" "R5"
+		(property "Value" "0.11R"
 			(at 370.3 96.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16375,7 +16375,7 @@
 				)
 			)
 		)
-		(property "Value" "C10"
+		(property "Value" "22uF"
 			(at 180.83 202.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16760,7 +16760,7 @@
 				)
 			)
 		)
-		(property "Value" "C8"
+		(property "Value" "100nF"
 			(at 297.91 185.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17066,7 +17066,7 @@
 				)
 			)
 		)
-		(property "Value" "R8"
+		(property "Value" "4.7k"
 			(at 523.89 74.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17144,7 +17144,7 @@
 				)
 			)
 		)
-		(property "Value" "R12"
+		(property "Value" "10k"
 			(at 102.89 112.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17300,7 +17300,7 @@
 				)
 			)
 		)
-		(property "Value" "R15"
+		(property "Value" "5.1k"
 			(at 46.45 82.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17801,7 +17801,7 @@
 				)
 			)
 		)
-		(property "Value" "R4"
+		(property "Value" "0.11R"
 			(at 358.87 96.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18042,7 +18042,7 @@
 				)
 			)
 		)
-		(property "Value" "C3"
+		(property "Value" "100nF 50V"
 			(at 277.59 61.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18348,7 +18348,7 @@
 				)
 			)
 		)
-		(property "Value" "R3"
+		(property "Value" "10k"
 			(at 102.89 92.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18806,7 +18806,7 @@
 				)
 			)
 		)
-		(property "Value" "R6"
+		(property "Value" "1k"
 			(at 281.4 81.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19581,7 +19581,7 @@
 				)
 			)
 		)
-		(property "Value" "C9"
+		(property "Value" "10uF 50V"
 			(at 155.83 202.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19659,7 +19659,7 @@
 				)
 			)
 		)
-		(property "Value" "C12"
+		(property "Value" "1uF"
 			(at 492.93 233.25 0)
 			(show_name no)
 			(do_not_autoplace no)
