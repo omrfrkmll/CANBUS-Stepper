@@ -124,8 +124,42 @@
 						)
 					)
 				)
-				(pin passive line (at 0 -7.62 90) (length 2.54) (name "SH" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
-				(pin passive line (at 0 -7.62 90) (length 2.54) (name "SH" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -194,19 +228,7 @@
 			(symbol "Conn_01x04_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy 1.27 -2.54)
+						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -230,7 +252,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy 1.27 2.54)
+						(xy -1.27 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy 1.27 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -1743,6 +1777,137 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 1.27 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 1.778 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1864,6 +2029,359 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 2.032 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.032 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.778 -2.032) (xy 1.778 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Q_PMOS_GDS"
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Q_PMOS_GDS"
+				(at 5.08 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "P-MOSFET transistor, SOIC-8 (1,2,3=S, 4=G, 5,6,7,8=D)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GDS_0_1"
+				(rectangle
+					(start -3.81 -5.08)
+					(end 3.81 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_PMOS_GDS_1_1"
+				(pin passive line
+					(at -6.35 3.81 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 -3.81 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -3.81 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -1.27 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 1.27 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 3.81 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2813,7 +3331,24 @@
 						)
 					)
 				)
-				(pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -3631,38 +4166,902 @@
 						)
 					)
 				)
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "42" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "43" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "44" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "45" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "46" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "47" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "48" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "49" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "50" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "51" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "52" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "53" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "54" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "55" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "56" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "57" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "58" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "59" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "60" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "62" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "63" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "64" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "65" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_1" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_2" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_3" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_4" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_5" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_6" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_7" (effects (font (size 1.27 1.27)))))
-				(pin power_in line (at 0 -30.48 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "61_8" (effects (font (size 1.27 1.27)))))
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "61_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "65"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Power_Protection:PESD1CAN"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PESD1CAN"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CAN-bus ESD protection diode array, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PESD1CAN_0_1"
+				(rectangle
+					(start -3.81 -2.54)
+					(end 3.81 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PESD1CAN_1_1"
+				(pin passive line
+					(at -6.35 1.27 0)
+					(length 2.54)
+					(name "CANH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -1.27 0)
+					(length 2.54)
+					(name "CANL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Power_Protection:USBLC6-2SC6"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USBLC6-2SC6"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Very low capacitance ESD protection array, SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USBLC6-2SC6_0_1"
+				(rectangle
+					(start -3.81 -5.08)
+					(end 3.81 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USBLC6-2SC6_1_1"
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -2.54 180)
+					(length 2.54)
+					(name "I/O2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 2.54 180)
+					(length 2.54)
+					(name "I/O1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -4358,17 +5757,6 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.524 1.27) (xy 1.524 1.27)
@@ -4385,6 +5773,17 @@
 					(pts
 						(xy 0 1.27) (xy 0 2.54)
 					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4882,747 +6281,6 @@
 			)
 			(embedded_fonts no)
 		)
-
-		(symbol "Device:Polyfuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "F"
-				(at 2.032 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Polyfuse"
-				(at 2.032 -1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Polyfuse_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -2.032) (xy 1.778 2.032)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Polyfuse_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Q_PMOS_GDS"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Q_PMOS_GDS"
-				(at 5.08 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "P-MOSFET transistor, SOIC-8 (1,2,3=S, 4=G, 5,6,7,8=D)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_PMOS_GDS_0_1"
-				(rectangle
-					(start -3.81 -5.08)
-					(end 3.81 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_PMOS_GDS_1_1"
-				(pin passive line
-					(at -6.35 3.81 0)
-					(length 2.54)
-					(name "S"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "1"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at -6.35 1.27 0)
-					(length 2.54)
-					(name "S"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "2"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at -6.35 -1.27 0)
-					(length 2.54)
-					(name "S"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "3"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin input line
-					(at -6.35 -3.81 0)
-					(length 2.54)
-					(name "G"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "4"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at 6.35 -3.81 180)
-					(length 2.54)
-					(name "D"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "5"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at 6.35 -1.27 180)
-					(length 2.54)
-					(name "D"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "6"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at 6.35 1.27 180)
-					(length 2.54)
-					(name "D"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "7"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-				(pin passive line
-					(at 6.35 3.81 180)
-					(length 2.54)
-					(name "D"
-						(effects (font (size 1.27 1.27)))
-					)
-					(number "8"
-						(effects (font (size 1.27 1.27)))
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Zener"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 1.27 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy 1.27 1.27) (xy 1.27 -1.27) (xy 1.778 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Power_Protection:PESD1CAN"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PESD1CAN"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CAN-bus ESD protection diode array, SOT-23"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PESD1CAN_0_1"
-				(rectangle
-					(start -3.81 -2.54)
-					(end 3.81 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PESD1CAN_1_1"
-				(pin passive line
-					(at -6.35 1.27 0)
-					(length 2.54)
-					(name "CANH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -1.27 0)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 6.35 0 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Power_Protection:USBLC6-2SC6"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "USBLC6-2SC6"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Very low capacitance ESD protection array, SOT-23-6"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "USBLC6-2SC6_0_1"
-				(rectangle
-					(start -3.81 -5.08)
-					(end 3.81 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "USBLC6-2SC6_1_1"
-				(pin passive line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name "I/O1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name "I/O2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -2.54 180)
-					(length 2.54)
-					(name "I/O2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 2.54 180)
-					(length 2.54)
-					(name "I/O1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "2. TMC2209 STEPPER DRIVER & MOTOR CONNECTOR"
 		(exclude_from_sim no)
@@ -5819,6 +6477,16 @@
 			(type default)
 		)
 		(uuid "226ef135-5d71-44f4-a7fd-2000fe124f47")
+	)
+	(wire
+		(pts
+			(xy 120 193.04) (xy 120 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ccce817-522e-44cd-8c89-ddeee36b78f6")
 	)
 	(wire
 		(pts
@@ -6702,6 +7370,15 @@
 		)
 		(uuid "0adb3e80-d323-4dac-ad7b-1eb5dd963511")
 	)
+	(label "+24V_FUSED"
+		(at 135 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0be8ec8c-2ce2-499d-8554-527105259933")
+	)
 	(label "USB_VBUS"
 		(at 65.73 86.52 0)
 		(effects
@@ -7062,6 +7739,15 @@
 		)
 		(uuid "5417847a-c286-463f-89fe-5a92a425cc0a")
 	)
+	(label "USB_VBUS_RAW"
+		(at 70 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "54364cec-e564-42be-b391-71c61d19b5f0")
+	)
 	(label "MOTOR_OB2"
 		(at 379.73 67.31 0)
 		(effects
@@ -7097,6 +7783,15 @@
 			)
 		)
 		(uuid "5af88eba-920a-47e1-8ead-dc056a0f7090")
+	)
+	(label "+24V_FUSED"
+		(at 120 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f3c1b75-2774-405f-a5c1-ecd94af29112")
 	)
 	(label "IO46"
 		(at 128.27 82.55 0)
@@ -7152,6 +7847,15 @@
 		)
 		(uuid "6ba87bae-3739-4e27-97d4-42e4a52d3dd5")
 	)
+	(label "GATE_24V"
+		(at 135 204 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6d1ab3c4-8973-4bbe-aa2a-0457994d8299")
+	)
 	(label "IO0"
 		(at 200.66 93.98 0)
 		(effects
@@ -7188,6 +7892,24 @@
 		)
 		(uuid "720de175-1cce-4d1e-9c48-d8e37e47e50b")
 	)
+	(label "USB_D+"
+		(at 50 55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "726c4128-f663-453c-a117-18cb1d4517dd")
+	)
+	(label "USB_VBUS_FUSED"
+		(at 70 59.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "740875c0-c36a-4afc-9a20-fc371cdd15e0")
+	)
 	(label "USB_VBUS"
 		(at 65.73 89.06 0)
 		(effects
@@ -7214,6 +7936,15 @@
 			)
 		)
 		(uuid "763955fc-4107-44db-b82f-d7eba0107891")
+	)
+	(label "GATE_24V"
+		(at 142 205 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "773abff1-8948-4fbb-a2cf-f145ffae1589")
 	)
 	(label "USB_VBUS"
 		(at 65.73 83.98 0)
@@ -7548,6 +8279,15 @@
 		)
 		(uuid "db1ec7f1-7e6f-466f-8709-1316bf8050c6")
 	)
+	(label "USB_D-"
+		(at 50 65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "db6bfeda-4510-4b43-9323-2a9b1c2a8b29")
+	)
 	(label "OLED_VCC"
 		(at 463.55 191.77 0)
 		(effects
@@ -7565,6 +8305,15 @@
 			)
 		)
 		(uuid "ddfb9985-39f3-466b-bd6a-06ed8877fed3")
+	)
+	(label "GND"
+		(at 50 68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "de65cc5a-725d-4947-b92d-e9b897472e5e")
 	)
 	(label "BRA"
 		(at 356.87 91.44 0)
@@ -7638,6 +8387,15 @@
 		)
 		(uuid "eb0a9db9-fe95-444a-95cf-e6f02baafd16")
 	)
+	(label "GND"
+		(at 142 211 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ec1f4c6c-9470-469e-a279-bd55c0af2ec7")
+	)
 	(label "CAN_VREF"
 		(at 326.07 199.23 0)
 		(effects
@@ -7673,6 +8431,42 @@
 			)
 		)
 		(uuid "f0d0eac3-3ed3-4138-b575-73be361c61d3")
+	)
+	(label "VBUS"
+		(at 135 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f11e5cfd-bcac-4c3d-bf81-d8c9d1eb0bed")
+	)
+	(label "CANH"
+		(at 330 191 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f2b6068c-6262-4386-8606-d7df1cc66018")
+	)
+	(label "+24V_IN"
+		(at 120 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f3f374d7-7969-46d2-97fe-b670f5964ed3")
+	)
+	(label "VBUS"
+		(at 50 52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f5c33572-3605-4c60-9723-9fe490146156")
 	)
 	(label "AUX2"
 		(at 543.53 240.02 0)
@@ -7728,6 +8522,15 @@
 		)
 		(uuid "fae4bdee-41e8-4988-9060-f3865864ef2a")
 	)
+	(label "GND"
+		(at 336.35 194.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fb12f415-8b04-41a0-adbe-e023378b066d")
+	)
 	(label "OLED_C2N"
 		(at 495.93 234.79 0)
 		(effects
@@ -7745,6 +8548,15 @@
 			)
 		)
 		(uuid "fcdc62f1-8598-4912-9ebb-15c5393266ac")
+	)
+	(label "CANL"
+		(at 330 197 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ff985d77-6f0e-4ac4-9335-1abc540d598f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7969,6 +8781,84 @@
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 129 204 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07807067-e422-4a45-8de5-6cc8082317bf")
+		(property "Reference" "D5"
+			(at 129 201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BZX84C12V"
+			(at 129 207 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 129 210 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129 213 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 129 204 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a3dbc17-98f1-40a5-8e17-9fb35131397a")
+		)
+		(pin "2"
+			(uuid "c6d78fcd-fd6b-42a1-8b9c-3b4438bb8683")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -8201,9 +9091,6 @@
 		(pin "4"
 			(uuid "d2c8fa7e-07bf-4b69-b063-f6914ed7ecf4")
 		)
-		(pin "MP"
-			(uuid "0e7d069b-5b53-4bae-81b2-971ccc171d6c")
-		)
 		(instances
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
@@ -8375,6 +9262,9 @@
 		)
 		(pin "5"
 			(uuid "ae272cd9-1cb3-41ea-aa2a-9b162566e7fc")
+		)
+		(pin "9"
+			(uuid "57431c72-956c-4b31-9967-9c333dbaf414")
 		)
 		(instances
 			(project "canbus-stepper"
@@ -8691,9 +9581,6 @@
 		)
 		(pin "4"
 			(uuid "d16e6a8b-666d-46a3-880a-0ec8d9fc1ce4")
-		)
-		(pin "MP"
-			(uuid "c7b58f91-f698-455c-a70a-0dee95424f8e")
 		)
 		(instances
 			(project "canbus-stepper"
@@ -9172,6 +10059,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Power_Protection:PESD1CAN")
+		(at 330 194.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25363ac6-a837-4532-bd0a-b61fae35e107")
+		(property "Reference" "D4"
+			(at 330 191.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PESD1CAN"
+			(at 330 197.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 330 200.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330 203.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 330 194.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1eecac1d-8570-4b51-890a-b6a41a9a4213")
+		)
+		(pin "2"
+			(uuid "d85c302f-71c0-43db-8a15-a086436897ea")
+		)
+		(pin "3"
+			(uuid "2e898549-df2a-4f82-87ac-579b775550c5")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 178.83 199.39 0)
 		(unit 1)
@@ -9391,6 +10359,12 @@
 		)
 		(pin "2"
 			(uuid "f12c224c-8e81-4bf2-91fe-6cb2d459aad8")
+		)
+		(pin "4"
+			(uuid "acc86d23-f2be-4d3f-98c5-33ebd86fe98e")
+		)
+		(pin "3"
+			(uuid "8de90ee8-ff3e-4ad3-945d-3b1efcdfa06d")
 		)
 		(instances
 			(project "canbus-stepper"
@@ -9626,6 +10600,84 @@
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 126 204 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d807ee8-48b2-446c-9487-861d04bd4f80")
+		(property "Reference" "R18"
+			(at 126 201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 126 207 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 126 210 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 126 213 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 126 204 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d784370f-aaea-4799-b515-0be0fcdc03a7")
+		)
+		(pin "2"
+			(uuid "75f1a2b7-86d2-4b9e-8ec2-f2b89e9d4740")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -10936,6 +11988,84 @@
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 120 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4914ebe1-61c8-4329-b254-e3929de0d3b5")
+		(property "Reference" "F1"
+			(at 120 193.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.5A 30V PPTC"
+			(at 120 199.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 120 202.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120 205.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b007d51c-781e-45df-b03d-07070e0d6387")
+		)
+		(pin "2"
+			(uuid "a113a7e8-94a6-4857-a39a-d54409f23442")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -13565,9 +14695,6 @@
 		(pin "4"
 			(uuid "33761758-de96-4666-a875-cd567e286358")
 		)
-		(pin "MP"
-			(uuid "db6c3b52-2505-4e87-b696-506a4c9be879")
-		)
 		(instances
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
@@ -14388,6 +15515,84 @@
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 70 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8815fed4-5442-4052-b8e7-e6b87b8e2109")
+		(property "Reference" "F2"
+			(at 70 52.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500mA 16V PPTC"
+			(at 70 58.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 70 61.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70 64.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 70 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cbcd83cb-8bf5-4255-9cf4-e64cd738c778")
+		)
+		(pin "2"
+			(uuid "3fdd2cf4-0d82-4b8a-9b0a-6c371d34ddff")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -15690,6 +16895,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_PMOS_GDS")
+		(at 126 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a26183be-c2fb-4ad7-81e9-be5f7376398c")
+		(property "Reference" "Q1"
+			(at 126 193.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AO4407A"
+			(at 126 199.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 126 202.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 126 205.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 126 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5a97748-47ba-46bd-acbb-b927646a15c6")
+		)
+		(pin "2"
+			(uuid "a42d7a23-a312-4bf1-80dc-711be1470e65")
+		)
+		(pin "3"
+			(uuid "564fe75a-8316-453e-b548-749407aeb8a9")
+		)
+		(pin "4"
+			(uuid "f38d54cf-b8ff-431c-b707-81acdb5f8c21")
+		)
+		(pin "5"
+			(uuid "ff4e2cc1-1d0c-43cb-8aff-71d59ec5a9a4")
+		)
+		(pin "6"
+			(uuid "b06935c4-b8a1-4965-8dd2-c41926ba56b3")
+		)
+		(pin "7"
+			(uuid "63f715d9-245e-4002-aedf-b450aae889c3")
+		)
+		(pin "8"
+			(uuid "1fe03f11-3274-41dd-8371-bb4694bd08ea")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 463.55 199.39 0)
 		(unit 1)
@@ -15836,6 +17137,96 @@
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Protection:USBLC6-2SC6")
+		(at 50 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a3c6e1f9-e6d2-4772-b4a6-cb66f33ad9ae")
+		(property "Reference" "U7"
+			(at 50 57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 50 63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 50 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50 69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50 60 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65c9a35a-deed-438d-af81-bef93d749a9e")
+		)
+		(pin "2"
+			(uuid "788baa65-d87f-43ee-bb2a-c1080a91eafb")
+		)
+		(pin "3"
+			(uuid "32002c2a-9778-448e-89df-c453f62a335d")
+		)
+		(pin "4"
+			(uuid "12195746-16b1-4e95-9307-1509e1a35ad5")
+		)
+		(pin "5"
+			(uuid "64ccf7da-f370-47e6-8e03-fa5e7267f707")
+		)
+		(pin "6"
+			(uuid "4777d519-38ca-4a16-9ada-c1a8b7c8622c")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -17320,6 +18711,12 @@
 		(pin "2"
 			(uuid "58e6babd-8faa-4b57-8331-41b2a3f2628a")
 		)
+		(pin "4"
+			(uuid "9cd89f62-68ea-47d6-adff-746673fdb575")
+		)
+		(pin "3"
+			(uuid "7d42e4dc-fd4b-49d0-ad36-365bebd7eb3c")
+		)
 		(instances
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
@@ -18513,6 +19910,102 @@
 		(pin "41"
 			(uuid "7e157930-08d7-4b21-a695-f58bd76558cf")
 		)
+		(pin "52"
+			(uuid "854c571f-c983-4f04-a291-da23654c2271")
+		)
+		(pin "46"
+			(uuid "1e8dc2cd-a14a-4baa-8b8b-d172994df357")
+		)
+		(pin "49"
+			(uuid "78af3d17-35bf-421e-8b74-f816e83f9f37")
+		)
+		(pin "61_3"
+			(uuid "50745d1d-2a64-4115-abfe-83bedb664173")
+		)
+		(pin "60"
+			(uuid "526cfc87-9fa6-4051-aff9-10959a80804f")
+		)
+		(pin "54"
+			(uuid "baa63883-7197-476e-81f9-6967b6e2e5f0")
+		)
+		(pin "59"
+			(uuid "1a1e3335-48e9-468e-927a-80469cdbf9c8")
+		)
+		(pin "61_4"
+			(uuid "94a4f5fa-e114-46d1-8a65-151cee8c7b72")
+		)
+		(pin "58"
+			(uuid "4190f964-d21a-4e91-b9e6-49a3d2ea9259")
+		)
+		(pin "45"
+			(uuid "51e74605-f035-44f9-bf54-93e86cfedfe8")
+		)
+		(pin "64"
+			(uuid "5fb94c61-7549-4f1a-b0b7-ae72f6846698")
+		)
+		(pin "65"
+			(uuid "ad257bf0-b88f-44af-840f-9b8931c02ca6")
+		)
+		(pin "53"
+			(uuid "15c8e637-ecef-4312-949d-270b55f6cbb8")
+		)
+		(pin "57"
+			(uuid "79a43ccb-34c1-4663-9f4c-6d971426736c")
+		)
+		(pin "48"
+			(uuid "bc51c475-e65d-4b02-9c65-7fc602f62568")
+		)
+		(pin "55"
+			(uuid "973f3f71-ebc6-4658-a347-0dd93b4f0c18")
+		)
+		(pin "62"
+			(uuid "d0095585-1332-4af7-9076-162932e3aefc")
+		)
+		(pin "61_5"
+			(uuid "26be93e1-4dc8-4af3-ab0a-45717ce4acd3")
+		)
+		(pin "61_6"
+			(uuid "67766de3-2417-4623-84a9-4310ca18a265")
+		)
+		(pin "51"
+			(uuid "0875cf63-3868-4a29-ba05-d7d57b5d3a30")
+		)
+		(pin "61"
+			(uuid "e1d85b14-15f2-4619-961e-4d6cda6a8e9e")
+		)
+		(pin "61_1"
+			(uuid "44aa48e2-aa61-4344-bc57-c95a59d69c8e")
+		)
+		(pin "61_2"
+			(uuid "50577408-81c5-4243-a1a1-c5a671c9b516")
+		)
+		(pin "44"
+			(uuid "d71502d4-6f62-424d-a9eb-bb3eaf3e79f4")
+		)
+		(pin "50"
+			(uuid "dbad17b9-f78a-47a3-ac9f-2e9bd0aee5ea")
+		)
+		(pin "47"
+			(uuid "7106d7de-bc63-4329-9ef5-e426b673152d")
+		)
+		(pin "61_8"
+			(uuid "ccb5c204-35af-42cf-8a48-14b55fce760e")
+		)
+		(pin "42"
+			(uuid "1eb27055-3bd5-4f9a-8739-d79546b32c8a")
+		)
+		(pin "43"
+			(uuid "aac851b4-4410-46bb-9dc3-8c7460515e7b")
+		)
+		(pin "61_7"
+			(uuid "07d2495e-cf97-48f4-afc9-d15772da7b1f")
+		)
+		(pin "56"
+			(uuid "982ce156-c25f-4cba-ab57-5a4ad28f68b5")
+		)
+		(pin "63"
+			(uuid "4bbe5bc6-8833-4a3a-8661-02c94db42325")
+		)
 		(instances
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
@@ -18826,9 +20319,6 @@
 		)
 		(pin "4"
 			(uuid "8a1a2336-7848-475c-a9ee-8d36dfb2b1ac")
-		)
-		(pin "MP"
-			(uuid "d8161e37-caf3-4035-9f9c-41fb362690ff")
 		)
 		(instances
 			(project "canbus-stepper"
@@ -19986,9 +21476,6 @@
 		(pin "4"
 			(uuid "b9d3476a-ccf2-4d9f-9e9d-9caa67e78aa4")
 		)
-		(pin "MP"
-			(uuid "fabd7abd-73b6-4abb-855f-1b5fd4000134")
-		)
 		(instances
 			(project "canbus-stepper"
 				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
@@ -20692,531 +22179,8 @@
 		)
 	)
 	(embedded_fonts no)
-	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 120.00 196.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4914ebe1-61c8-4329-b254-e3929de0d3b5")
-		(property "Reference" "F1"
-			(at 120.00 193.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.5A 30V PPTC"
-			(at 120.00 199.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
-			(at 120.00 202.85 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.00 205.85 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b007d51c-781e-45df-b03d-07070e0d6387")
-		)
-		(pin "2"
-			(uuid "a113a7e8-94a6-4857-a39a-d54409f23442")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_PMOS_GDS")
-		(at 126.00 196.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a26183be-c2fb-4ad7-81e9-be5f7376398c")
-		(property "Reference" "Q1"
-			(at 126.00 193.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AO4407A"
-			(at 126.00 199.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 126.00 202.85 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 126.00 205.85 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d5a97748-47ba-46bd-acbb-b927646a15c6")
-		)
-		(pin "2"
-			(uuid "a42d7a23-a312-4bf1-80dc-711be1470e65")
-		)
-		(pin "3"
-			(uuid "564fe75a-8316-453e-b548-749407aeb8a9")
-		)
-		(pin "4"
-			(uuid "f38d54cf-b8ff-431c-b707-81acdb5f8c21")
-		)
-		(pin "5"
-			(uuid "ff4e2cc1-1d0c-43cb-8aff-71d59ec5a9a4")
-		)
-		(pin "6"
-			(uuid "b06935c4-b8a1-4965-8dd2-c41926ba56b3")
-		)
-		(pin "7"
-			(uuid "63f715d9-245e-4002-aedf-b450aae889c3")
-		)
-		(pin "8"
-			(uuid "1fe03f11-3274-41dd-8371-bb4694bd08ea")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 126.00 204.00 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d807ee8-48b2-446c-9487-861d04bd4f80")
-		(property "Reference" "R18"
-			(at 126.00 201.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 126.00 207.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 126.00 210.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 126.00 213.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d784370f-aaea-4799-b515-0be0fcdc03a7")
-		)
-		(pin "2"
-			(uuid "75f1a2b7-86d2-4b9e-8ec2-f2b89e9d4740")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 129.00 204.00 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "07807067-e422-4a45-8de5-6cc8082317bf")
-		(property "Reference" "D5"
-			(at 129.00 201.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZX84C12V"
-			(at 129.00 207.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 129.00 210.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.00 213.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3a3dbc17-98f1-40a5-8e17-9fb35131397a")
-		)
-		(pin "2"
-			(uuid "c6d78fcd-fd6b-42a1-8b9c-3b4438bb8683")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Polyfuse")
-		(at 70.00 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8815fed4-5442-4052-b8e7-e6b87b8e2109")
-		(property "Reference" "F2"
-			(at 70.00 52.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "500mA 16V PPTC"
-			(at 70.00 58.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 70.00 61.88 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 70.00 64.88 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cbcd83cb-8bf5-4255-9cf4-e64cd738c778")
-		)
-		(pin "2"
-			(uuid "3fdd2cf4-0d82-4b8a-9b0a-6c371d34ddff")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "F2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:PESD1CAN")
-		(at 330.00 194.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "25363ac6-a837-4532-bd0a-b61fae35e107")
-		(property "Reference" "D4"
-			(at 330.00 191.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PESD1CAN"
-			(at 330.00 197.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 330.00 200.15 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 330.00 203.15 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1eecac1d-8570-4b51-890a-b6a41a9a4213")
-		)
-		(pin "2"
-			(uuid "d85c302f-71c0-43db-8a15-a086436897ea")
-		)
-		(pin "3"
-			(uuid "2e898549-df2a-4f82-87ac-579b775550c5")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:USBLC6-2SC6")
-		(at 50.00 60.00 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a3c6e1f9-e6d2-4772-b4a6-cb66f33ad9ae")
-		(property "Reference" "U7"
-			(at 50.00 57.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USBLC6-2SC6"
-			(at 50.00 63.00 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 50.00 66.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.00 69.00 0)
-			(show_name no)
-			(hide yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65c9a35a-deed-438d-af81-bef93d749a9e")
-		)
-		(pin "2"
-			(uuid "788baa65-d87f-43ee-bb2a-c1080a91eafb")
-		)
-		(pin "3"
-			(uuid "32002c2a-9778-448e-89df-c453f62a335d")
-		)
-		(pin "4"
-			(uuid "12195746-16b1-4e95-9307-1509e1a35ad5")
-		)
-		(pin "5"
-			(uuid "64ccf7da-f370-47e6-8e03-fa5e7267f707")
-		)
-		(pin "6"
-			(uuid "4777d519-38ca-4a16-9ada-c1a8b7c8622c")
-		)
-		(instances
-			(project "canbus-stepper"
-				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
-					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
 
-	(wire (pts (xy 120.0 193.04) (xy 120.0 196.85)))
-	(label "+24V_IN" (at 120.0 193.04 0) (effects (font (size 1.27 1.27))))
-	(label "+24V_FUSED" (at 120.0 200.66 0) (effects (font (size 1.27 1.27))))
-	(label "+24V_FUSED" (at 135.0 193.04 0) (effects (font (size 1.27 1.27))))
-	(label "VBUS" (at 135.0 200.66 0) (effects (font (size 1.27 1.27))))
-	(label "GATE_24V" (at 135.0 204.0 0) (effects (font (size 1.27 1.27))))
-	(label "GATE_24V" (at 142.0 205.0 0) (effects (font (size 1.27 1.27))))
-	(label "GND" (at 142.0 211.0 0) (effects (font (size 1.27 1.27))))
-	(label "USB_VBUS_RAW" (at 70.0 52.0 0) (effects (font (size 1.27 1.27))))
-	(label "USB_VBUS_FUSED" (at 70.0 59.66 0) (effects (font (size 1.27 1.27))))
-	(label "CANH" (at 330.0 191.0 0) (effects (font (size 1.27 1.27))))
-	(label "CANL" (at 330.0 197.0 0) (effects (font (size 1.27 1.27))))
-	(label "GND" (at 336.35 194.15 0) (effects (font (size 1.27 1.27))))
-	(label "USB_D+" (at 50.0 55.0 0) (effects (font (size 1.27 1.27))))
-	(label "USB_D-" (at 50.0 65.0 0) (effects (font (size 1.27 1.27))))
-	(label "VBUS" (at 50.0 52.0 0) (effects (font (size 1.27 1.27))))
-	(label "GND" (at 50.0 68.0 0) (effects (font (size 1.27 1.27))))
+	(label "+24V_IN" (at 80.01 194.31 0) (effects (font (size 1.27 1.27))))
+	(label "USB_VBUS_RAW" (at 65.73 83.98 0) (effects (font (size 1.27 1.27))))
+
 )
