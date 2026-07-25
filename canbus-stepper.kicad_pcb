@@ -182,6 +182,12 @@
 		(path "/07807067-e422-4a45-8de5-6cc8082317bf")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -459,21 +465,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "b74a058a-7b77-4164-a3e5-171cbc337f40")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/c7fe2e05-50f8-4ca1-a04b-706889f00bd7")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -562,14 +562,16 @@
 			)
 		)
 	)
-	(footprint "CANBUS-Stepper:SW_TS31-46-35-BK-B-160-RA-SMT-TR"
+	(footprint "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin"
 		(layer "F.Cu")
 		(uuid "1342c2f3-c5ae-46fd-865a-459e84d0c48c")
 		(at 178.925 109.175)
+		(descr "SMD 1x-dip-switch SPST Copal_CHS-01A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin")
+		(tags "SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin")
 		(property "Reference" "SW5"
-			(at 0.175 -4.635 0)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
-			(uuid "4003d174-382e-46a4-928d-7bab4dd36308")
+			(uuid "855664e7-c082-496f-96dd-6824f42b09b5")
 			(effects
 				(font
 					(size 1 1)
@@ -578,9 +580,9 @@
 			)
 		)
 		(property "Value" "Termination"
-			(at 0 -3 0)
+			(at 0 2.33 0)
 			(layer "F.Fab")
-			(uuid "104c0892-2ef8-4d96-a280-b75fd8a6aeda")
+			(uuid "ebc2ff9f-2549-4102-93fa-6416636e4561")
 			(effects
 				(font
 					(size 1 1)
@@ -592,7 +594,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ff68f03f-8777-48cc-850e-d36302603f00")
+			(uuid "5fdff05c-c131-4442-b812-c5fcd459b281")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -603,7 +605,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b6542d0-220e-4f72-b8ec-2bc3a95b56db")
+			(uuid "cfb82b7f-a707-4dd3-9389-2bb2061e0916")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -613,290 +615,235 @@
 		(path "/59ff3242-8370-4e8d-9cde-dfdc40e218ff")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_poly
-			(pts
-				(xy -2.75 -0.1) (xy -2.75 1.4) (xy -1.5 1.4) (xy -1.5 0.4) (xy -1.9 0.4) (xy -1.9 -0.1)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Mask")
-			(uuid "0fe1e4f2-1538-43a4-985c-a5878b47440c")
-		)
-		(fp_poly
-			(pts
-				(xy 2.75 -0.1) (xy 2.75 1.4) (xy 1.5 1.4) (xy 1.5 0.4) (xy 1.9 0.4) (xy 1.9 -0.1)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Mask")
-			(uuid "12ba70e6-ffd2-46ca-b5f4-4c893a650d99")
-		)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
-			(start -1.08 -1.4)
-			(end 1.08 -1.4)
+			(start -3.34 -0.68)
+			(end -2.76 -0.68)
 			(stroke
-				(width 0.127)
+				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f2dbe4a0-beed-421a-ad86-32a72743132f")
+			(uuid "43c34358-9150-4f59-a471-132a50070b4c")
 		)
 		(fp_line
-			(start 1.28 0.9)
-			(end -1.28 0.9)
+			(start -2.76 -1.33)
+			(end -2.76 -0.68)
 			(stroke
-				(width 0.127)
+				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
 			(uuid "24bf296d-0826-48de-96b0-ce80ab274d4b")
 		)
-		(fp_poly
-			(pts
-				(xy -2.65 0) (xy -2.65 1.3) (xy -1.6 1.3) (xy -1.6 0.5) (xy -2 0.5) (xy -2 0)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Paste")
-			(uuid "22b20dec-2b5b-40e3-a4e3-ca147f0449dc")
-		)
-		(fp_poly
-			(pts
-				(xy 2.65 0) (xy 2.65 1.3) (xy 1.6 1.3) (xy 1.6 0.5) (xy 2 0.5) (xy 2 0)
-			)
-			(stroke
-				(width 0.01)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.Paste")
-			(uuid "3eac92bc-2050-46df-b841-fc695f0bc63e")
-		)
 		(fp_line
-			(start -2.9 -2.15)
-			(end 2.9 -2.15)
+			(start -2.76 -1.33)
+			(end 2.76 -1.33)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "c9732560-35a9-4853-8581-b0d4fbd43b0e")
-		)
-		(fp_line
-			(start -2.9 2.35)
-			(end -2.9 -2.15)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "71cd712d-0f9d-4995-86aa-5cce8e9626a9")
-		)
-		(fp_line
-			(start 2.9 -2.15)
-			(end 2.9 2.35)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "5dfc53a0-85af-47eb-9ba4-e37fc50ba8bd")
-		)
-		(fp_line
-			(start 2.9 2.35)
-			(end -2.9 2.35)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
+			(layer "F.SilkS")
 			(uuid "fd7ce04c-cdcf-4b35-b982-e2871041cc8a")
 		)
 		(fp_line
-			(start -2.3 -1.4)
-			(end 2.3 -1.4)
+			(start -2.76 1.33)
+			(end -2.76 0.62)
 			(stroke
-				(width 0.127)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "97c50ff7-a81d-439a-a499-8634b8a0e7f0")
+			(layer "F.SilkS")
+			(uuid "5dfc53a0-85af-47eb-9ba4-e37fc50ba8bd")
 		)
 		(fp_line
-			(start -2.3 0.9)
-			(end -2.3 -1.4)
+			(start -2.76 1.33)
+			(end 2.76 1.33)
 			(stroke
-				(width 0.127)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.Fab")
+			(layer "F.SilkS")
 			(uuid "405989a6-3627-416e-a065-7e5ed4c59132")
 		)
 		(fp_line
-			(start -1 0.9)
-			(end -2.3 0.9)
+			(start 2.76 -1.33)
+			(end 2.76 -0.62)
 			(stroke
-				(width 0.127)
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "97c50ff7-a81d-439a-a499-8634b8a0e7f0")
+		)
+		(fp_line
+			(start 2.76 1.33)
+			(end 2.76 0.62)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f2dbe4a0-beed-421a-ad86-32a72743132f")
+		)
+		(fp_rect
+			(start -3.59 -1.58)
+			(end 3.59 1.58)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1c35e1d9-8440-4623-9719-9ceea9f9efa7")
+		)
+		(fp_line
+			(start -2.7 -0.27)
+			(end -1.7 -1.27)
+			(stroke
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "43c34358-9150-4f59-a471-132a50070b4c")
+			(uuid "a13e8165-1fc1-401c-aa73-6ebce3d98df2")
 		)
 		(fp_line
-			(start -1 2.1)
-			(end -1 0.9)
+			(start -2.7 1.27)
+			(end -2.7 -0.27)
 			(stroke
-				(width 0.127)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
 			(uuid "d1a02dc3-aabb-43de-a9e8-31a85754b64a")
 		)
 		(fp_line
-			(start 1 0.9)
-			(end -1 0.9)
+			(start -1.7 -1.27)
+			(end 2.7 -1.27)
 			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f4fe211d-5d8d-466d-8a30-da200d2de678")
-		)
-		(fp_line
-			(start 1 0.9)
-			(end 1 2.1)
-			(stroke
-				(width 0.127)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
 			(uuid "463345f6-d863-447b-ac4f-eaec76ee8f85")
 		)
 		(fp_line
-			(start 1 2.1)
-			(end -1 2.1)
+			(start -0.5 -0.25)
+			(end -0.5 0.25)
 			(stroke
-				(width 0.127)
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f4fe211d-5d8d-466d-8a30-da200d2de678")
+		)
+		(fp_line
+			(start 2.7 -1.27)
+			(end 2.7 1.27)
+			(stroke
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
 			(uuid "1f9770a0-22c2-4c9d-9034-1ff700cdaf9e")
 		)
 		(fp_line
-			(start 2.3 -1.4)
-			(end 2.3 0.9)
+			(start 2.7 1.27)
+			(end -2.7 1.27)
 			(stroke
-				(width 0.127)
+				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
 			(uuid "91cd95ca-65fc-473e-bbd0-f01d661d6e4a")
 		)
-		(fp_line
-			(start 2.3 0.9)
-			(end 1 0.9)
+		(fp_rect
+			(start -1.5 -0.25)
+			(end -0.5 0.25)
 			(stroke
-				(width 0.127)
+				(width 0.1)
 				(type solid)
 			)
+			(fill yes)
 			(layer "F.Fab")
-			(uuid "a13e8165-1fc1-401c-aa73-6ebce3d98df2")
+			(uuid "3f022396-5460-4a72-89e7-3af295d306fc")
 		)
-		(pad "" np_thru_hole circle
-			(at -0.85 0)
-			(size 0.75 0.75)
-			(drill 0.75)
-			(layers "*.Cu" "*.Mask")
-			(uuid "8f73930e-ecce-46ad-aee9-936daacefae0")
+		(fp_rect
+			(start -1.5 -0.25)
+			(end 1.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3c52219e-ed78-4be7-8621-29726d9cea8a")
 		)
-		(pad "" np_thru_hole circle
-			(at 0.85 0)
-			(size 0.75 0.75)
-			(drill 0.75)
-			(layers "*.Cu" "*.Mask")
-			(uuid "2a8111cf-9074-417f-8e98-44dbc7531f55")
+		(fp_text user "on"
+			(at 0.83 -0.76 0)
+			(layer "F.Fab")
+			(uuid "7fc858ab-c5a4-4517-8519-929b658dca26")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.09)
+				)
+			)
 		)
-		(pad "1" smd rect
-			(at -1.7 -1.3)
-			(size 0.6 1.2)
+		(fp_text user "${REFERENCE}"
+			(at 2.1 0 90)
+			(layer "F.Fab")
+			(uuid "1076eee2-250b-43c6-9ad0-06587561c4d8")
+			(effects
+				(font
+					(size 0.6 0.6)
+					(thickness 0.09)
+				)
+			)
+		)
+		(point
+			(at 181.465 109.175)
+			(size 0.635)
+			(layer "F.Fab")
+			(uuid "f6b87825-b383-4953-8e79-2c6bec85266f")
+		)
+		(pad "1" smd roundrect
+			(at -2.54 0)
+			(size 1.6 0.76)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
 			(net "/CAN_TERM_SW")
 			(pinfunction "1_1")
 			(pintype "passive")
-			(solder_mask_margin 0.102)
 			(uuid "a6f82770-f650-4652-8b31-59ade2768223")
 		)
-		(pad "2" smd rect
-			(at 1.7 -1.3)
-			(size 0.6 1.2)
+		(pad "2" smd roundrect
+			(at 2.54 0)
+			(size 1.6 0.76)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
 			(net "/CANL")
 			(pinfunction "2_2")
 			(pintype "passive")
-			(solder_mask_margin 0.102)
 			(uuid "cac53dfb-a9fc-47e2-9284-8d8e865df5e9")
 		)
-		(pad "G1" smd custom
-			(at -2.125 0.9)
-			(size 0.5 0.5)
-			(property pad_prop_mechanical)
-			(layers "F.Cu")
-			(options
-				(clearance outline)
-				(anchor rect)
-			)
-			(primitives
-				(gr_poly
-					(pts
-						(xy -0.525 -0.9) (xy -0.525 0.4) (xy 0.525 0.4) (xy 0.525 -0.4) (xy 0.125 -0.4) (xy 0.125 -0.9)
-					)
-					(width 0.01)
-					(fill yes)
-				)
-			)
-			(uuid "74b0f928-0e02-473e-94f1-f2d7a8f1f58c")
-		)
-		(pad "G2" smd custom
-			(at 2.125 0.9)
-			(size 0.5 0.5)
-			(property pad_prop_mechanical)
-			(layers "F.Cu")
-			(options
-				(clearance outline)
-				(anchor rect)
-			)
-			(primitives
-				(gr_poly
-					(pts
-						(xy 0.525 -0.9) (xy 0.525 0.4) (xy -0.525 0.4) (xy -0.525 -0.4) (xy -0.125 -0.4) (xy -0.125 -0.9)
-					)
-					(width 0.01)
-					(fill yes)
-				)
-			)
-			(uuid "94aba2e7-46ef-4800-93a5-476aaa636c70")
-		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3dmodels/TS31-46-35-BK-B-160-RA-SMT-TR.step"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin.step"
 			(offset
-				(xyz 0 1.5 1)
+				(xyz 0 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 -0 -0)
+				(xyz 0 0 0)
 			)
 		)
 	)
@@ -950,21 +897,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "4a3b9671-2f58-49ed-ba81-845bf75104ac")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/d97479ed-26cc-46b1-afc4-35f76bcb7208")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1103,21 +1044,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ba495d8d-7770-4eac-b68c-570aaf40fa1c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/a26183be-c2fb-4ad7-81e9-be5f7376398c")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "8" "7" "6" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1478,21 +1413,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "41ddcf81-66fb-4762-be4f-79fcb460daa3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/94f7ebf5-81a3-4a5f-a90a-a1def8ce2b41")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1631,21 +1560,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d4015d1e-24ec-47b6-95cd-afe1f16207e7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/5bcde071-ea9a-4eb1-86bd-0341c7e128c1")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1784,21 +1707,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "748f3366-89f0-42dd-b0f8-4a20d8d4eaf2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/f5ad41b1-0a97-484a-b6ca-706b2ed6b8c2")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1937,21 +1854,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "39fdb929-bdbf-4e8c-8d0a-1c8b92ef7ab7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/46fe65b1-fb13-462f-989a-a8358dfa4908")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2090,21 +2001,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "71b66cfe-c0d8-458d-a70b-f276816a4426")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/178024a2-c5ff-482f-8c2a-0f9b5d4f6945")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2244,21 +2149,18 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/no_lead"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "03203a4e-60e4-4db6-a6cb-04ecf1ccd9c9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/60f82a1a-b68f-4771-8aec-52dff9fc1b16")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "17" "18" "2" "9" "10" "15" "11" "12" "13" "14" "24" "25" "26"
+					"16" "19" "23" "29" "21" "22" "4" "1" "20" "3" "5" "6" "7" "27" "28"
+					"8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2993,21 +2895,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "203f3683-1fee-46f6-9b2e-17d77653e9c6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/6ca6dc12-8f60-4813-a41d-e73911d44f23")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3146,21 +3042,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c26f8a43-e297-4634-966f-ce10be96dc26")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/cda7d20c-8995-4b17-98e4-fbe62610060a")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3299,21 +3189,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 270)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "f71e7e17-7385-46ed-b348-99eed53d3bf1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/588a8e5f-9a85-4633-bf76-b70f1419dcdb")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3453,21 +3337,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "338004d3-527a-49d2-a6d9-13bcb0112bcc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/59ff3242-8370-4e8d-9cde-dfdc40e218d0")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "5" "3" "2" "4" "7" "6" "8")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3831,6 +3709,12 @@
 		(path "/c9343d98-b726-459e-9b77-05e44ecc7283")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4184,21 +4068,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "09f5b17c-2336-4e8b-989b-b85af69161eb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/2d807ee8-48b2-446c-9487-861d04bd4f80")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4341,8 +4219,14 @@
 		(path "/d5da5219-1cb7-4c15-90db-148a4de3788f")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.1 -0.3865)
 			(end -2.1 0.3865)
@@ -4595,21 +4479,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "0e8780cc-f609-4cea-b0be-951746c56cad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/2e02741e-bfda-43c7-9258-f6710ba35293")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4748,21 +4626,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "466ef486-ee8d-476b-8c43-57bc2721bd68")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/a3c6e1f9-e6d2-4772-b4a6-cb66f33ad9ae")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "2" "6" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5256,8 +5128,14 @@
 		(path "/37b4ba48-00cc-4f84-8dbe-4d6ba3512c34")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_poly
 			(pts
 				(xy -2.75 -0.1) (xy -2.75 1.4) (xy -1.5 1.4) (xy -1.5 0.4) (xy -1.9 0.4) (xy -1.9 -0.1)
@@ -5607,21 +5485,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "10f211e7-0287-48d4-9f39-5ad24654d512")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/3816814e-01ec-4105-9225-f040c8adc46d")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5811,21 +5683,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "capacitor/SMD/elec_round_polarized"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7df033ec-295b-4a46-b215-f8b484d04e02")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/88c18046-c07d-4e54-b176-aea4da4d5c9b")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6253,21 +6119,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "972088d7-5160-4456-bbd0-28d3f8b124de")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/2d2c9764-07ac-4035-b491-274106634ffe")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6406,21 +6266,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "28f65b3a-cca7-4a16-ab03-4a0817c1941f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/79ce052e-48ba-43da-a79f-b2049f039030")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7105,21 +6959,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "4c9bd2a2-5692-4d5f-b241-f7bca96293ac")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/d47a7fc4-1a1a-4a6e-81bd-361098039e23")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7258,21 +7106,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1c1de9af-9aa0-4375-8bb2-3a86da771ac6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/6aec0868-6c29-48fe-8c5d-747c37c4f4c0")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7420,6 +7262,17 @@
 		(path "/dc084c93-5eb5-4ee7-9c56-984896d78473")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "39" "8" "11" "24" "25" "4" "46" "15" "26" "40" "41" "42"
+					"43" "44" "45" "16" "63" "49" "55" "54" "53" "52" "64" "51" "50" "61_7"
+					"56" "57" "58" "59" "60" "61" "65" "62" "61_8" "61_1" "61_2" "61_3"
+					"61_4" "61_5" "61_6" "47" "48" "9" "10" "21" "22" "23" "12" "13" "14"
+					"17" "18" "19" "28" "31" "35" "36" "37" "38"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -8224,7 +8077,7 @@
 			(size 1.2 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND_PAD_61")
+			(pinfunction "GND_61")
 			(pintype "power_in")
 			(solder_mask_margin 0.102)
 			(uuid "02abcda5-04ba-403b-a150-ed311a3c3dc5")
@@ -8514,21 +8367,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "81e95946-def1-4f41-b048-22001b6b3cc9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/e36d6876-1fdb-4411-832b-69f5c697dcac")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8814,21 +8661,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 180)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "f3a1679d-dc65-48f7-a07b-ae2611c3dd57")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/fd1a1f47-29a0-47eb-b859-69014b3847cc")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8970,6 +8811,12 @@
 		(path "/2984b2ed-f305-4134-9c10-4a95a1066615")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9324,21 +9171,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7f4d8f86-ca11-44d9-844c-80e4067232d1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/1ff6b69a-d1fc-4fd4-b97c-1c13a45c741a")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "5" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9719,21 +9560,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "b647274c-13fe-4bc6-92a6-2638ecfa2249")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/1866f9ef-6762-4a82-b17e-7d4e16e68820")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9872,21 +9707,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "a7a8786a-4f83-4fa0-bdcb-fbb4bca9f56c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/25363ac6-a837-4532-bd0a-b61fae35e107")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10251,8 +10080,14 @@
 		(path "/f72ad8f5-629f-499c-a1ea-39ae6d9746ce")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.1 -0.3865)
 			(end -2.1 0.3865)
@@ -10658,8 +10493,14 @@
 		(path "/4442a228-b3a6-4b71-a62f-18b669a4b7c4")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_poly
 			(pts
 				(xy -2.75 -0.1) (xy -2.75 1.4) (xy -1.5 1.4) (xy -1.5 0.4) (xy -1.9 0.4) (xy -1.9 -0.1)
@@ -11006,21 +10847,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "0d58ab30-23e2-4904-88ab-fdac5da1487a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/71cbd1ab-c798-4de5-9d6c-6da34a650d12")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11159,21 +10994,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "bf1753e3-72b5-42cc-91c4-93b819d9bf16")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/76b5d8c5-d8dc-48a8-a0c9-e9e91413acf7")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11312,21 +11141,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "cc3fce03-730b-4cd9-bcab-9fdf039d9b60")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/4a5034ec-e5c4-48f1-a35b-bf98dc4babce")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11465,21 +11288,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "76b1a34b-4f98-4fb5-86a4-6b675bb4f63d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/d3166541-422f-42ba-bf12-71fc09154a7b")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11623,6 +11440,14 @@
 		(path "/79f6299c-3af2-421c-bf5d-1f1ccf3f6f5f")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "A4" "B4" "A9" "B9" "A5" "A1" "B1" "A12" "B12" "SH" "A6" "B6" "A7"
+					"B7" "B5" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12051,21 +11876,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 270)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "af780318-1b4f-46b8-81c5-e98338b1178b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/42605e12-7efb-41e2-bb17-af1c9b917ca2")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12204,21 +12023,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7fb7a8e1-22e2-4bad-bdaa-e96ea6398da0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/8815fed4-5442-4052-b8e7-e6b87b8e2109")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12357,21 +12170,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "78a42d8f-5c84-47cd-b3c5-9add2d3dfd76")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/400f3194-5796-4abc-9688-7945babad651")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12513,6 +12320,12 @@
 		(path "/1a16998c-7310-47f5-9c35-871f75109f54")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12968,6 +12781,12 @@
 		(path "/1527374e-9728-495e-8df8-e1450679524c")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "8" "3" "2" "9" "7" "6" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13217,21 +13036,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d86ea2b2-d750-4569-8f28-e81777a7a4a5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/71aa6701-9018-4d8a-980b-6cda8f5b0849")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13421,21 +13234,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "connector/SMD_single_row_plus_mounting_pad"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ff4a0c9f-959f-455d-80da-4a7db0cc2816")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/702760f7-053d-4d3c-99b3-b5e520caf6ab")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13846,21 +13653,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "77c89e73-8a73-471c-aa67-71d35ac5526e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/e8fc881f-2e1b-472f-9fab-16037fbb58f4")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13999,21 +13800,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "9a403817-4670-43ed-a9c0-bec9cb7896ad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/4914ebe1-61c8-4329-b254-e3929de0d3b5")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14299,21 +14094,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "39757fca-78db-4053-9271-9909e6b18bcf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/b1adb7d7-e5f8-4d13-bf54-6c930131d318")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14452,21 +14241,15 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "fe1fb402-c509-478f-8df8-fa5c9f639ade")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/fd97c86e-488a-4d96-a866-2830c3e62369")
 		(sheetname "/")
 		(sheetfile "canbus-stepper.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
