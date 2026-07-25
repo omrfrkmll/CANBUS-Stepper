@@ -1111,7 +1111,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at -10.16 0 0)
 					(length 2.54)
 					(name "CC1"
@@ -1255,7 +1255,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin bidirectional line
 					(at 10.16 -5.08 180)
 					(length 2.54)
 					(name "CC2"
@@ -1363,10 +1363,10 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at -10.16 -12.7 0)
 					(length 2.54)
-					(name "GND"
+					(name "Shield"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3111,7 +3111,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_CAN:SN65HVD230"
+		(symbol "Interface_CAN:TCAN1051"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3130,7 +3130,7 @@
 					)
 				)
 			)
-			(property "Value" "SN65HVD230"
+			(property "Value" "TCAN1051"
 				(at 0 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3173,7 +3173,7 @@
 					)
 				)
 			)
-			(symbol "SN65HVD230_0_1"
+			(symbol "TCAN1051_0_1"
 				(rectangle
 					(start -7.62 -10.16)
 					(end 7.62 10.16)
@@ -3186,7 +3186,7 @@
 					)
 				)
 			)
-			(symbol "SN65HVD230_1_1"
+			(symbol "TCAN1051_1_1"
 				(pin input line
 					(at -10.16 7.62 0)
 					(length 2.54)
@@ -3259,10 +3259,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_in line
 					(at 10.16 -5.08 180)
 					(length 2.54)
-					(name "Vref"
+					(name "VIO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3316,7 +3316,7 @@
 				(pin input line
 					(at -10.16 2.54 0)
 					(length 2.54)
-					(name "Rs"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3352,7 +3352,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_Module:ESP32-S3-WROOM-1"
+		(symbol "MCU_Module:ESP32-S3-MINI-1"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3371,7 +3371,7 @@
 					)
 				)
 			)
-			(property "Value" "ESP32-S3-WROOM-1"
+			(property "Value" "ESP32-S3-MINI-1"
 				(at 0 26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3414,7 +3414,7 @@
 					)
 				)
 			)
-			(symbol "ESP32-S3-WROOM-1_0_1"
+			(symbol "ESP32-S3-MINI-1_0_1"
 				(rectangle
 					(start -15.24 -27.94)
 					(end 15.24 25.4)
@@ -3427,7 +3427,7 @@
 					)
 				)
 			)
-			(symbol "ESP32-S3-WROOM-1_1_1"
+			(symbol "ESP32-S3-MINI-1_1_1"
 				(pin power_in line
 					(at -17.78 22.86 0)
 					(length 2.54)
@@ -3456,7 +3456,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3474,7 +3474,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "39"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3492,7 +3492,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3510,7 +3510,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3528,7 +3528,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3546,7 +3546,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3582,7 +3582,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3600,7 +3600,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3618,7 +3618,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3654,7 +3654,7 @@
 							)
 						)
 					)
-					(number "13"
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3672,7 +3672,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3708,7 +3708,7 @@
 							)
 						)
 					)
-					(number "16"
+					(number "46"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3726,7 +3726,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3744,7 +3744,7 @@
 							)
 						)
 					)
-					(number "18"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3762,7 +3762,7 @@
 							)
 						)
 					)
-					(number "19"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3780,7 +3780,7 @@
 							)
 						)
 					)
-					(number "20"
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3798,7 +3798,7 @@
 							)
 						)
 					)
-					(number "21"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3816,7 +3816,7 @@
 							)
 						)
 					)
-					(number "22"
+					(number "19"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3834,7 +3834,7 @@
 							)
 						)
 					)
-					(number "23"
+					(number "26"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3852,7 +3852,7 @@
 							)
 						)
 					)
-					(number "24"
+					(number "28"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3870,7 +3870,7 @@
 							)
 						)
 					)
-					(number "25"
+					(number "31"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3906,7 +3906,7 @@
 							)
 						)
 					)
-					(number "27"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3924,7 +3924,7 @@
 							)
 						)
 					)
-					(number "28"
+					(number "35"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3942,7 +3942,7 @@
 							)
 						)
 					)
-					(number "29"
+					(number "36"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3960,7 +3960,7 @@
 							)
 						)
 					)
-					(number "30"
+					(number "37"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3978,7 +3978,7 @@
 							)
 						)
 					)
-					(number "31"
+					(number "38"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3996,7 +3996,7 @@
 							)
 						)
 					)
-					(number "32"
+					(number "40"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4014,7 +4014,7 @@
 							)
 						)
 					)
-					(number "33"
+					(number "41"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4032,7 +4032,7 @@
 							)
 						)
 					)
-					(number "34"
+					(number "42"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4050,7 +4050,7 @@
 							)
 						)
 					)
-					(number "35"
+					(number "43"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4068,7 +4068,7 @@
 							)
 						)
 					)
-					(number "36"
+					(number "44"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4086,7 +4086,7 @@
 							)
 						)
 					)
-					(number "37"
+					(number "45"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4104,7 +4104,7 @@
 							)
 						)
 					)
-					(number "38"
+					(number "47"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4122,7 +4122,7 @@
 							)
 						)
 					)
-					(number "39"
+					(number "48"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4140,7 +4140,7 @@
 							)
 						)
 					)
-					(number "40"
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4158,7 +4158,7 @@
 							)
 						)
 					)
-					(number "41"
+					(number "61"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5205,7 +5205,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5223,7 +5223,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5561,7 +5561,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5579,7 +5579,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5597,7 +5597,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5615,7 +5615,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5633,7 +5633,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5651,7 +5651,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7865,7 +7865,7 @@
 		)
 		(uuid "6daa1372-519b-4191-9459-3bd7642c335d")
 	)
-	(label "MS1"
+	(label "GND"
 		(at 299.72 76.2 0)
 		(effects
 			(font
@@ -8297,7 +8297,7 @@
 		)
 		(uuid "dc55f3d3-463f-458c-b299-25a259ca4b90")
 	)
-	(label "MS2"
+	(label "GND"
 		(at 299.72 78.74 0)
 		(effects
 			(font
@@ -8396,7 +8396,7 @@
 		)
 		(uuid "ec1f4c6c-9470-469e-a279-bd55c0af2ec7")
 	)
-	(label "CAN_VREF"
+	(label "+3V3"
 		(at 326.07 199.23 0)
 		(effects
 			(font
@@ -9177,7 +9177,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_CAN:SN65HVD230")
+		(lib_id "Interface_CAN:TCAN1051")
 		(at 315.91 194.15 0)
 		(unit 1)
 		(body_style 1)
@@ -16057,7 +16057,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "power:+5V")
 		(at 305.75 199.23 0)
 		(unit 1)
 		(body_style 1)
@@ -16078,7 +16078,7 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+5V"
 			(at 305.75 196.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19725,7 +19725,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCU_Module:ESP32-S3-WROOM-1")
+		(lib_id "MCU_Module:ESP32-S3-MINI-1")
 		(at 152.4 85.09 0)
 		(unit 1)
 		(body_style 1)
@@ -19745,7 +19745,7 @@
 				)
 			)
 		)
-		(property "Value" "ESP32-S3-WROOM-1"
+		(property "Value" "ESP32-S3-MINI-1"
 			(at 152.4 100.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22183,4 +22183,103 @@
 	(label "+24V_IN" (at 80.01 194.31 0) (effects (font (size 1.27 1.27))))
 	(label "USB_VBUS_RAW" (at 65.73 83.98 0) (effects (font (size 1.27 1.27))))
 
+
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 350 197.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "59ff3242-8370-4e8d-9cde-dfdc40e218ff")
+		(property "Reference" "SW5"
+			(at 350 182.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Termination"
+			(at 350 212.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CANBUS-Stepper:SW_TS31-46-35-BK-B-160-RA-SMT-TR"
+			(at 350 197.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 350 197.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAN Bus 120R Termination Switch"
+			(at 350 197.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11a5b822-7582-4e50-a619-5b455fd55ff1")
+		)
+		(pin "2"
+			(uuid "11a5bde2-e0c1-4ff8-9f4b-55f0bf696ff2")
+		)
+		(instances
+			(project "canbus-stepper"
+				(path "/708095da-6de2-439a-99a4-e77d5d456b3f"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(label "CAN_TERM_SW"
+		(at 344.92 197.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "59ff3242-8370-4e8d-9cde-dfdc40e218fe")
+	)
+
+	(label "CANL"
+		(at 355.08 197.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "59ff3242-8370-4e8d-9cde-dfdc40e218fd")
+	)
 )
