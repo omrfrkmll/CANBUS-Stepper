@@ -132,7 +132,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23"
 		(layer "F.Cu")
 		(uuid "03f82625-524c-469c-a9c5-4ee2a0aaef78")
-		(at 199.168654 91.987308)
+		(at 236.00 150.00)
 		(descr "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236)")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "D5"
