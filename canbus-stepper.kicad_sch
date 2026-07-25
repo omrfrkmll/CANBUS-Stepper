@@ -19894,7 +19894,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "dd8a1ed6-72dd-4e16-af45-7cf183a332a8")
 		)
 		(property "Value" "3.5A 30V PPTC"
 			(at 120.00 199.85 0)
@@ -19905,7 +19904,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "fd10f5d6-0a6d-46b8-8f96-6ae2495e71c1")
 		)
 		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
 			(at 120.00 202.85 0)
@@ -19917,7 +19915,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "686b7199-9de7-48ed-9b6a-50f0cd54fe38")
 		)
 		(property "Datasheet" "~"
 			(at 120.00 205.85 0)
@@ -19929,7 +19926,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "adf6f2ed-8cd3-43d5-9364-76ba1627074e")
 		)
 	)
 	(symbol
@@ -19952,7 +19948,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "fc9ccf64-5679-44c8-b7d2-9778fb2d586e")
 		)
 		(property "Value" "AO4407A"
 			(at 126.00 199.85 0)
@@ -19963,7 +19958,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "bf25c089-5bbb-49cb-bb67-555673745114")
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 126.00 202.85 0)
@@ -19975,7 +19969,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "95038270-51ca-4432-a074-942357ec6aaa")
 		)
 		(property "Datasheet" "~"
 			(at 126.00 205.85 0)
@@ -19987,7 +19980,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "10fcadc6-b9c0-40a5-b3a1-da359ce192a1")
 		)
 	)
 	(symbol
@@ -20010,7 +20002,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "308e90f9-a018-4572-9793-9742408e4f55")
 		)
 		(property "Value" "10k"
 			(at 126.00 207.00 0)
@@ -20021,7 +20012,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "db433366-4b6b-46f7-a18b-7233ea6a52e4")
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 126.00 210.00 0)
@@ -20033,7 +20023,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "fa5f518c-749a-417d-801b-02abb5540234")
 		)
 		(property "Datasheet" "~"
 			(at 126.00 213.00 0)
@@ -20045,7 +20034,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "9bf88b02-9e38-4c60-8f74-6231400fc02c")
 		)
 	)
 	(symbol
@@ -20068,7 +20056,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "985867c9-b291-40db-adc1-2bde2ea1740e")
 		)
 		(property "Value" "BZX84C12V"
 			(at 129.00 207.00 0)
@@ -20079,7 +20066,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "b491812a-ad06-4690-adf7-91cde052232e")
 		)
 		(property "Footprint" "Diode_SMD:D_SOT-23_ANK"
 			(at 129.00 210.00 0)
@@ -20091,7 +20077,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "e9c0cb57-bf2b-440c-a2a3-2470f1d13b36")
 		)
 		(property "Datasheet" "~"
 			(at 129.00 213.00 0)
@@ -20103,7 +20088,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "137d5bc7-ecd5-4c23-b620-f65823d94033")
 		)
 	)
 	(symbol
@@ -20126,7 +20110,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "572a7716-6582-4edf-ac46-ca443e2e248d")
 		)
 		(property "Value" "500mA 16V PPTC"
 			(at 70.00 58.88 0)
@@ -20137,7 +20120,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "802150b0-e3e3-4930-a05e-695b6154514e")
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
 			(at 70.00 61.88 0)
@@ -20149,7 +20131,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "8053ad87-c28e-4435-9627-5d071168acad")
 		)
 		(property "Datasheet" "~"
 			(at 70.00 64.88 0)
@@ -20161,7 +20142,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "f3b16d44-30af-4ba9-8acd-1f4604406c65")
 		)
 	)
 	(symbol
@@ -20184,7 +20164,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "6836090b-9d5e-4fe1-bbe2-ea1f7a39842c")
 		)
 		(property "Value" "PESD1CAN"
 			(at 330.00 197.15 0)
@@ -20195,7 +20174,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "27c31445-b9da-4344-be24-ecc5119b51e3")
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 330.00 200.15 0)
@@ -20207,7 +20185,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "2d4ce0e7-c87f-4cad-a69f-72e30c0829ea")
 		)
 		(property "Datasheet" "~"
 			(at 330.00 203.15 0)
@@ -20219,7 +20196,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "c5677309-27ed-4f06-8074-a9b5cd170e64")
 		)
 	)
 	(symbol
@@ -20242,7 +20218,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "91b20a3b-ddaa-493f-aabd-6bb3b67d8795")
 		)
 		(property "Value" "USBLC6-2SC6"
 			(at 50.00 63.00 0)
@@ -20253,7 +20228,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "a9fb394d-8cde-422b-a703-5eef0a042332")
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 50.00 66.00 0)
@@ -20265,7 +20239,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "2f072820-c5de-473f-b31d-0c3a98284603")
 		)
 		(property "Datasheet" "~"
 			(at 50.00 69.00 0)
@@ -20277,7 +20250,6 @@
 					(size 1.27 1.27)
 				)
 			)
-			(uuid "42729332-4a2c-41d9-92c1-e37ef4af8061")
 		)
 	)
 )
