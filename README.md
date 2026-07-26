@@ -7,9 +7,10 @@
 <p align="center">
   <a href="#-overview">Overview</a> •
   <a href="#-hardware-features">Hardware Features</a> •
+  <a href="#-pcb--hardware-preview">PCB Preview</a> •
   <a href="#-repository-structure">Repository Structure</a> •
   <a href="#-getting-started">Getting Started</a> •
-  <a href="#-license">License</a>
+  <a href="#-license--commercial-use">License</a>
 </p>
 
 ---
@@ -33,11 +34,22 @@
 
 ---
 
+## 🖼️ PCB & Hardware Preview
+
+<p align="center">
+  <img src="docs/assets/autoplacer_layout.png" alt="CANBUS-Stepper PCB Layout Preview" width="85%"/>
+  <br>
+  <i>Figure 1: CANBUS-Stepper KiCad PCB Component Layout Overview</i>
+</p>
+
+---
+
 ## 📁 Repository Structure
 
 ```
 CANBUS-Stepper/
 ├── README.md                      # Main project documentation
+├── LICENSE                        # Creative Commons CC BY-NC-SA 4.0 License
 ├── .gitignore                     # Git ignore rules for KiCad and build outputs
 ├── docs/
 │   └── assets/                    # Board renders, diagrams, and documentation assets
@@ -82,8 +94,13 @@ Firmware development for the ESP32-S2 is structured under `firmware/`. Key roadm
 
 ---
 
-## 🤝 Contributing & License
+## ⚖️ License & Commercial Use
 
-Contributions, bug reports, and feature suggestions are highly welcome! Feel free to open an Issue or submit a Pull Request.
+This project is licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE)**.
 
-Distributed under the MIT License.
+### 👥 For Individual & Educational Users (Bireysel ve Eğitimsel Kullanım)
+- **100% Free and Open**: You are free to view, modify, build, and use this hardware design and code for personal projects, research, education, and non-commercial applications.
+
+### 🏢 For Commercial Use & Manufacturing (Ticari Kullanım ve Üretim)
+- **Commercial Restriction**: Producing, selling, or deriving commercial products from this design without explicit written authorization from the copyright holder is strictly prohibited.
+- **Dual Licensing**: If you wish to manufacture, integrate, or sell boards based on this design commercially, please contact the repository owner to obtain a commercial license.
