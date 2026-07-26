@@ -5,13 +5,21 @@
 </p>
 
 <p align="center">
+  <a href="#-development-status">Development Status</a> •
   <a href="#-overview">Overview</a> •
   <a href="#-hardware-features">Hardware Features</a> •
   <a href="#-pcb--hardware-preview">PCB Preview</a> •
-  <a href="#-repository-structure">Repository Structure</a> •
-  <a href="#-getting-started">Getting Started</a> •
+  <a href="#-sponsorship--support">Sponsorship</a> •
   <a href="#-license--commercial-use">License</a>
 </p>
+
+---
+
+## 🚧 Development Status
+
+> [!WARNING]
+> **Work In Progress (WIP)**: This project is currently in active **schematic design & PCB layout stage**. 
+> The board **has NOT yet been physically manufactured or field-tested**. The schematics and component placements may undergo further design revisions before initial prototype batch production and physical hardware validation.
 
 ---
 
@@ -43,6 +51,19 @@
   <br>
   <i>Figure 1: CANBUS-Stepper PCB Component Layout Preview — Top Side (Left) & Bottom Side (Right)</i>
 </p>
+
+---
+
+## 💖 Sponsorship & Support
+
+To bring this open-hardware project from design files to physical prototype boards, test hardware, and community adoption, **sponsorship and hardware support are warmly welcomed!**
+
+If you are a **PCB manufacturing house, component supplier, or individual backer** interested in supporting:
+- 🛠️ **Prototype PCB Fabrication & Assembly (PCBA)**
+- 🧪 **Component Sourcing & Hardware Testing**
+- ☕ **Developer Contributions & Project Funding**
+
+Please feel free to reach out, open an issue, or sponsor through **GitHub Sponsors**. Your support directly accelerates physical prototyping and open-source hardware validation!
 
 ---
 
