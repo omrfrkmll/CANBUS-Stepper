@@ -101,7 +101,7 @@ CANBUS-Stepper/
 1. Download and install [KiCad 7.0 or later](https://www.kicad.org/).
 2. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/CANBUS-Stepper.git
+   git clone https://github.com/omrfrkmll/CANBUS-Stepper.git
    cd CANBUS-Stepper
    ```
 3. Open `pcb/canbus-stepper.kicad_pro` inside KiCad.
