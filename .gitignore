@@ -1,8 +1,20 @@
-# KiCad temporary & backup files
+# KiCad temporary, backup & report files
 *.bak
 *-backups/
+canbus-stepper-backups/
 *-drc.rpt
 *-erc.rpt
 *.net
 ~*.lck
 *.tmp
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS / Editor generated files
+.DS_Store
+.vscode/
+.idea/
