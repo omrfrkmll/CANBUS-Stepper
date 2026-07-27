@@ -1,7 +1,7 @@
 # ⚡ CANBUS-Stepper
 
 <p align="center">
-  <b>ESP32-S2 Based Closed-Loop CAN Bus Stepper Motor Driver Board</b>
+  <b>ESP32-S3 Based Closed-Loop CAN Bus Stepper Motor Driver Board</b>
 </p>
 
 <p align="center">
@@ -25,15 +25,16 @@
 
 ## 📌 Overview
 
-**CANBUS-Stepper** is an open-source, high-performance smart stepper motor driver board built around the **ESP32-S2** microcontroller. Designed specifically for 3D printer toolheads, robotic actuators, and CNC automation, this board integrates a native CAN Bus transceiver (TCAN1044V), magnetic position encoder feedback (AS5600), power regulation (MP2315 buck converter), and stepper motor driving into a compact NEMA 17 footprint.
+**CANBUS-Stepper** is an open-source, high-performance smart stepper motor driver board built around the **ESP32-S3** microcontroller. Designed specifically for 3D printer toolheads, robotic actuators, and CNC automation, this board integrates a native CAN Bus transceiver (TCAN1051V), magnetic position encoder feedback (AS5600), power regulation (TI LMR33630 36V/3A buck converter), and stepper motor driving into a compact NEMA 17 footprint.
 
 ---
 
 ## 🛠️ Hardware Features
 
-- **Microcontroller**: ESP32-S2 (Single-core Xtensa LX7 @ 240MHz, Native USB 2.0, TWAI / CAN Bus support).
-- **CAN Bus Transceiver**: TCAN1044VDDFRQ1 5V CAN Transceiver with high ESD and bus fault protection.
-- **Power Management**: MP2315GJ High-efficiency step-down buck converter (Wide DC input voltage range).
+- **Microcontroller**: ESP32-S3 (Dual-core Xtensa LX7 @ 240MHz, Native USB 2.0, TWAI / CAN Bus support).
+- **CAN Bus Transceiver**: TCAN1051VDRBRQ1 5V CAN FD Transceiver with 3.3V $V_{IO}$ logic interface (VSON-8 3mm x 3mm).
+- **Power Management**: TI LMR33630CRNXR High-efficiency 3.8V–36V / 3A step-down buck converter (VQFN-12 2mm x 3mm).
+- **Reverse Polarity Protection**: Alpha & Omega AON7407 -30V/-30A P-Channel MOSFET (DFN 3mm x 3mm).
 - **Position Feedback**: AS5600 Magnetic Rotary Encoder (I2C interface) for accurate absolute angle sensing and closed-loop control.
 - **Connectivity & I/O**:
   - USB Type-C receptacle for programming, flashing, and serial debugging.
@@ -82,11 +83,11 @@ CANBUS-Stepper/
 │   ├── canbus-stepper.kicad_pcb   # PCB Layout
 │   ├── sym-lib-table              # Symbol library table
 │   ├── fp-lib-table               # Footprint library table
-│   ├── *.kicad_sym                # Custom symbol libraries (AS5600, TCAN1044, MP2315, etc.)
+│   ├── *.kicad_sym                # Custom symbol libraries (AS5600, TCAN1051V, LMR33630, AON7407, etc.)
 │   ├── CANBUS-Stepper.pretty/     # Custom footprint library
 │   ├── 3dmodels/                  # Component 3D STEP models for KiCad rendering
 │   └── bom/                       # Bill of Materials & Interactive HTML iBOM (ibom.html)
-├── firmware/                      # ESP32-S2 Stepper Driver Firmware
+├── firmware/                      # ESP32-S3 Stepper Driver Firmware
 │   └── README.md                  # Firmware architecture & CAN bus protocol roadmap
 └── step/                          # Board 3D CAD STEP Files
     └── README.md                  # Exported overall PCB 3D STEP model for mechanical integration
@@ -111,7 +112,7 @@ CANBUS-Stepper/
 
 ## 📜 Firmware Roadmap
 
-Firmware development for the ESP32-S2 is structured under `firmware/`. Key roadmap milestones include:
+Firmware development for the ESP32-S3 is structured under `firmware/`. Key roadmap milestones include:
 - **TWAI CAN Bus Protocol**: Standardized command set for motor movement, status telemetry, and configuration.
 - **Closed-Loop Control**: AS5600 encoder feedback loop for stall detection and precise step regulation.
 
