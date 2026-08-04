@@ -8,6 +8,7 @@ canbus-stepper-backups/
 ~*.lck
 *.tmp
 *.dsn
+_autosave-*
 
 # Python bytecode & cache
 __pycache__/
