@@ -21,3 +21,7 @@ __pycache__/
 .vscode/
 .idea/
 
+# Hardware files (Kept local, ignored in public repo)
+pcb/
+
+
