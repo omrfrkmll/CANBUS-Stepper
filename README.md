@@ -73,58 +73,34 @@ Please feel free to reach out, open an issue, or sponsor through **GitHub Sponso
 ```
 CANBUS-Stepper/
 ├── README.md                      # Main project documentation
-├── LICENSE                        # Creative Commons CC BY-NC-SA 4.0 License
-├── .gitignore                     # Git ignore rules for KiCad and build outputs
+├── LICENSE                        # Project License
+├── .gitignore                     # Git ignore rules
 ├── docs/
 │   └── assets/                    # Board renders, diagrams, and documentation assets
-├── pcb/                           # KiCad PCB Hardware Design Files
-│   ├── canbus-stepper.kicad_pro   # KiCad Project file
-│   ├── canbus-stepper.kicad_sch   # Schematic diagram
-│   ├── canbus-stepper.kicad_pcb   # PCB Layout
-│   ├── sym-lib-table              # Symbol library table
-│   ├── fp-lib-table               # Footprint library table
-│   ├── *.kicad_sym                # Custom symbol libraries (AS5600, TCAN1051V, LMR33630, AON7407, etc.)
-│   ├── CANBUS-Stepper.pretty/     # Custom footprint library
-│   ├── 3dmodels/                  # Component 3D STEP models for KiCad rendering
-│   └── bom/                       # Bill of Materials & Interactive HTML iBOM (ibom.html)
-├── firmware/                      # ESP32-S3 Stepper Driver Firmware
+├── firmware/                      # ESP32-S3 Stepper Driver Firmware & Open SDK
 │   └── README.md                  # Firmware architecture & CAN bus protocol roadmap
-└── step/                          # Board 3D CAD STEP Files
+└── step/                          # 3D CAD STEP Files & Enclosure Integration Models
     └── README.md                  # Exported overall PCB 3D STEP model for mechanical integration
 ```
 
 ---
 
-## 🔧 Getting Started
+## 📜 Firmware & SDK Roadmap
 
-### Opening the PCB Project in KiCad
-
-1. Download and install [KiCad 7.0 or later](https://www.kicad.org/).
-2. Clone this repository:
-   ```bash
-   git clone https://github.com/omrfrkmll/CANBUS-Stepper.git
-   cd CANBUS-Stepper
-   ```
-3. Open `pcb/canbus-stepper.kicad_pro` inside KiCad.
-4. To view the Interactive Bill of Materials, open `pcb/bom/ibom.html` in any web browser.
-
----
-
-## 📜 Firmware Roadmap
-
-Firmware development for the ESP32-S3 is structured under `firmware/`. Key roadmap milestones include:
+Firmware and SDK development for the ESP32-S3 is structured under `firmware/`. Key roadmap milestones include:
 - **TWAI CAN Bus Protocol**: Standardized command set for motor movement, status telemetry, and configuration.
 - **Closed-Loop Control**: AS5600 encoder feedback loop for stall detection and precise step regulation.
+- **Open-Source SDK & API**: C++ / Python kütüphaneleri ve robot kolu (robotic actuator) kontrol rehberleri.
 
 ---
 
-## ⚖️ License & Commercial Use
+## ⚖️ Project Architecture & Commercial Licensing
 
-This project is licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](LICENSE)**.
+This project follows a **Hybrid Open-Software & Proprietary-Hardware** model:
 
-### 👥 For Individual & Educational Users (Bireysel ve Eğitimsel Kullanım)
-- **100% Free and Open**: You are free to view, modify, build, and use this hardware design and code for personal projects, research, education, and non-commercial applications.
+- 💻 **Firmware, SDK & Software (Open Source)**: Open for community contributions, Klipper/Marlin integration, and custom robotics control.
+- 🛡️ **Hardware Design & Schematics (Proprietary IP)**: The PCB layout and Gerber design files are proprietary. 
 
-### 🏢 For Commercial Use & Manufacturing (Ticari Kullanım ve Üretim)
-- **Commercial Restriction**: Producing, selling, or deriving commercial products from this design without explicit written authorization from the copyright holder is strictly prohibited.
-- **Dual Licensing**: If you wish to manufacture, integrate, or sell boards based on this design commercially, please contact the repository owner to obtain a commercial license.
+### 🏢 Manufacturing & Commercial Partnerships
+For prototype support, custom batch manufacturing, or exclusive regional retail distribution partnerships, please contact the repository owner.
+
