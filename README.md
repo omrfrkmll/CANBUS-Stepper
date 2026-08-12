@@ -46,9 +46,9 @@
 ## 🖼️ PCB & Hardware Preview
 
 <p align="center">
-  <img src="docs/assets/pcb_top.png" alt="CANBUS-Stepper PCB Top Side" width="48%"/>
+  <img src="docs/assets/pcb_top.png?v=2" alt="CANBUS-Stepper PCB Top Side" width="48%"/>
   &nbsp;&nbsp;
-  <img src="docs/assets/pcb_bottom.png" alt="CANBUS-Stepper PCB Bottom Side" width="48%"/>
+  <img src="docs/assets/pcb_bottom.png?v=2" alt="CANBUS-Stepper PCB Bottom Side" width="48%"/>
   <br>
   <i>Figure 1: CANBUS-Stepper PCB Component Layout Preview — Top Side (Left) & Bottom Side (Right)</i>
 </p>
