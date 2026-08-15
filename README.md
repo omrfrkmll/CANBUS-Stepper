@@ -35,9 +35,9 @@
 - **Ultra-Quiet Motor Drive**: Trinamic TMC2209-LA driver with StealthChop2™, SpreadCycle™, and StallGuard4™ sensorless homing.
 - **Closed-Loop Position Feedback**: High-precision AS5600 12-bit magnetic rotary encoder mounted coaxially on the bottom layer to eliminate missed steps.
 - **Native CAN Bus Communication**: Automotive-grade TI TCAN1051V transceiver supporting high-speed CAN and CAN FD logic.
-- **Industrial Wide-Input Power**: High-efficiency TI LMR33630 36V/3A synchronous step-down DC-DC buck regulator + ultra-low-noise 3.3V LDO.
+- **Industrial Wide-Input Power**: High-efficiency TI LMR33630 36V / 3A synchronous step-down DC-DC buck regulator + ultra-low-noise 3.3V LDO.
 - **Multi-Stage Protection Circuits**: Reverse polarity P-MOSFET, transient voltage suppressors (TVS), ESD diode arrays, and resettable PPTC fuses.
-- **Compact NEMA 17 Footprint**: Fits directly onto the rear face of standard $42\,\text{mm} \times 42\,\text{mm}$ NEMA 17 stepper motors ($40.3\,\text{mm} \times 40.3\,\text{mm}$ profile with corner chamfers and M3 mounting holes).
+- **Compact NEMA 17 Footprint**: Fits directly onto the rear face of standard 42mm x 42mm NEMA 17 stepper motors (40.3mm x 40.3mm profile with corner chamfers and M3 mounting holes).
 
 ---
 
@@ -63,29 +63,29 @@
 
 ### ⚡ Motor Drive & Closed-Loop Regulation
 - **Stepper Driver**: **Trinamic TMC2209-LA** (VQFN-28 package with thermal vias).
-  - Operating Voltage: Up to $28\,\text{V}$ (recommended $12\,\text{V} - 24\,\text{V}$).
-  - Current Capability: $2.0\,\text{A}_\text{RMS}$ ($2.8\,\text{A}_\text{Peak}$) motor phase current.
+  - Operating Voltage: Up to 28V DC (recommended 12V – 24V).
+  - Current Capability: 2.0A RMS (2.8A Peak) motor phase current.
   - Features: StealthChop2™ (silent operation), SpreadCycle™ (high dynamic torque), StallGuard4™ (load measurement & sensorless homing), CoolStep™ (energy saving).
   - Interface: UART control for dynamic microstepping configuration (up to 256 microsteps) and real-time current scaling.
 - **Position Sensor**: **AMS AS5600-ASOT** 12-Bit On-Axis Magnetic Rotary Encoder.
-  - Position Resolution: $4096\,\text{steps/rev}$ ($0.087^\circ$).
+  - Position Resolution: 4096 steps/rev (0.087° resolution).
   - Mounting: Centered directly on PCB bottom layer for coaxial alignment with motor shaft diametral magnet.
-  - Interface: Fast-mode I2C ($400\,\text{kHz}$).
+  - Interface: Fast-mode I2C (400 kHz).
 
 ### 🌐 Bus Communication & Power Regulation
-- **CAN Bus Transceiver**: **TI TCAN1051VDRBRQ1** 5V CAN FD Transceiver with $3.3\,\text{V}$ $V_\text{IO}$ logic interface and $\pm 58\,\text{V}$ bus fault protection.
-- **Main DC-DC Buck Converter**: **TI LMR33630CRNXR** Synchronous Step-Down Regulator ($3.8\,\text{V} - 36\,\text{V}$ input range, $3.0\,\text{A}$ continuous output @ $2.1\,\text{MHz}$ switching frequency).
-- **MCU & Analog LDO**: **TI TLV75533PDRVR** $500\,\text{mA}$ ultra-low-dropout $3.3\,\text{V}$ regulator providing clean power to ESP32-S3 and sensors.
-- **Bulk Filtering**: $100\,\mu\text{F} / 35\,\text{V}$ Low-ESR aluminum electrolytic bulk capacitor ($6.3\,\text{mm} \times 5.8\,\text{mm}$ SMD) for motor switching current ripple suppression.
+- **CAN Bus Transceiver**: **TI TCAN1051VDRBRQ1** 5V CAN FD Transceiver with 3.3V V_IO logic interface and ±58V bus fault protection.
+- **Main DC-DC Buck Converter**: **TI LMR33630CRNXR** Synchronous Step-Down Regulator (3.8V – 36V input range, 3.0A continuous output @ 2.1 MHz switching frequency).
+- **MCU & Analog LDO**: **TI TLV75533PDRVR** 500mA ultra-low-dropout 3.3V regulator providing clean power to ESP32-S3 and sensors.
+- **Bulk Filtering**: 100µF / 35V Low-ESR aluminum electrolytic bulk capacitor (6.3mm x 5.8mm SMD) for motor switching current ripple suppression.
 
 ### 🛡️ Protection & Safety Architecture
-- **Reverse Polarity Protection**: **Alpha & Omega AON7407** ($-30\,\text{V} / -30\,\text{A}$, $8.5\,\text{m}\Omega$ $R_\text{DS(on)}$ P-Channel MOSFET) with Zener gate clamping.
+- **Reverse Polarity Protection**: **Alpha & Omega AON7407** (-30V / -30A, 8.5mΩ R_DS(on) P-Channel MOSFET) with Zener gate clamping.
 - **Overcurrent Protection**:
-  - $1.5\,\text{A} / 24\,\text{V}$ Resettable PPTC fuse (`1210L150/24WR`) on main 24V DC input rail.
-  - $500\,\text{mA} / 16\,\text{V}$ Resettable PPTC fuse (`SMDH0805B050TF`) on USB VBUS power line.
+  - 1.5A / 24V Resettable PPTC fuse (`1210L150/24WR`) on main 24V DC input rail.
+  - 500mA / 16V Resettable PPTC fuse (`SMDH0805B050TF`) on USB VBUS power line.
 - **Transient & ESD Protection**:
-  - **PESD1CAN** TVS diode array on CAN Bus differential lines ($CAN_H / CAN_L$).
-  - **SMAJ28A** $28\,\text{V} / 400\,\text{W}$ Transient Voltage Suppressor on main 24V DC input.
+  - **PESD1CAN** TVS diode array on CAN Bus differential lines (CAN_H / CAN_L).
+  - **SMAJ28A** 28V / 400W Transient Voltage Suppressor on main 24V DC input.
   - **STMicroelectronics USBLC6-2P6** ultra-low capacitance ESD protection array on USB D+/D- lines.
   - **MBR0520** Schottky diode for safe USB/Main power OR-ing.
 
@@ -93,13 +93,13 @@
 | Connector / Component | Type / Footprint | Function |
 | :--- | :--- | :--- |
 | **USB-C** | 16-Pin USB Type-C Receptacle | Firmware flashing, USB CDC serial debugging & power |
-| **24V Power In / Out** | 2x Molex Micro-Fit 3.0 (436500209) 2-Pin | $24\,\text{V}$ Main power input & daisy-chain pass-through |
-| **Motor Output** | JST PH 4-Pin SMD (S4B-PH-SM4-K-TB) | 4-wire bipolar stepper motor phases ($A1, A2, B1, B2$) |
-| **Qwiic / I2C Port** | JST SH 4-Pin ($1.0\,\text{mm}$) Horizontal | External I2C sensors, OLED displays & expansions ($3.3\,\text{V}, \text{GND}, \text{SDA}, \text{SCL}$) |
-| **AUX Port** | JST SH 4-Pin ($1.0\,\text{mm}$) Horizontal | Auxiliary GPIOs for endstops, bed probes, or toolhead sensors |
+| **24V Power In / Out** | 2x Molex Micro-Fit 3.0 (436500209) 2-Pin | 24V Main power input & daisy-chain pass-through |
+| **Motor Output** | JST PH 4-Pin SMD (S4B-PH-SM4-K-TB) | 4-wire bipolar stepper motor phases (A1, A2, B1, B2) |
+| **Qwiic / I2C Port** | JST SH 4-Pin (1.0mm) Horizontal | External I2C sensors, OLED displays & expansions (3.3V, GND, SDA, SCL) |
+| **AUX Port** | JST SH 4-Pin (1.0mm) Horizontal | Auxiliary GPIOs for endstops, bed probes, or toolhead sensors |
 | **NTC / Sensor Ports** | 2x JST SH 2-Pin (SM02B-SRSS-TB) | Dedicated NTC thermistor input & endstop trigger |
 | **OLED Display FPC** | Amphenol SFV30R-2STBE1HLF (30-Pin 0.5mm) | Bare COG OLED display panel interface (SSD1306) |
-| **CAN Termination** | SMD Slide Switch (`MSK12C01G15-W`) | Switchable $120\,\Omega$ CAN bus termination resistor |
+| **CAN Termination** | SMD Slide Switch (`MSK12C01G15-W`) | Switchable 120Ω CAN bus termination resistor |
 | **Buttons & Indicators** | 2x Tactile Push-Buttons + 3x LEDs | RESET, BOOT/User buttons; Power, Driver, and CAN Status LEDs |
 
 ---
@@ -160,8 +160,8 @@ The project is **100% turnkey ready** for automated SMT assembly at **JLCPCB**, 
    - Open [`pcb/bom/ibom.html`](pcb/bom/ibom.html) in your browser to interactively highlight part placements, footprints, and designators during manual inspection or prototyping.
 3. **Recommended PCB Specs**:
    - **Layers**: 2 Layers
-   - **Thickness**: $1.6\,\text{mm}$ (FR4 TG150+)
-   - **Copper Weight**: $1\,\text{oz}$ ($35\,\mu\text{m}$)
+   - **Thickness**: 1.6mm (FR4 TG150+)
+   - **Copper Weight**: 1oz (35µm)
    - **Surface Finish**: ENIG (Electroless Nickel Immersion Gold) recommended for QFN/DFN coplanarity, or LeadFree HASL.
 
 ---
@@ -189,7 +189,7 @@ While this project is fully open source, you can support the creator and ensure 
 
 ### 🏢 B2B Custom Robotics & Turnkey Engineering
 Need customized hardware or industrial integration for your commercial robotics or automation project?
-- **Custom PCB Redesigns** (Multi-axis drivers, $48\,\text{V}$ high-voltage input, RS485 / EtherCAT / DroneCAN).
+- **Custom PCB Redesigns** (Multi-axis drivers, 48V high-voltage input, RS485 / EtherCAT / DroneCAN).
 - **Industrial Firmware & ROS2 / Micro-ROS Drivers**.
 - **Volume Batch Manufacturing & PCBA Sourcing**.
 
