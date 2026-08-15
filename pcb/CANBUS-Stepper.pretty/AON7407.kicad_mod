@@ -1,0 +1,211 @@
+(footprint "AON7407"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Alpha & Omega AON7407 -30V -30A P-Channel MOSFET DFN3x3-8 EPAD")
+	(tags "AON7407 DFN3x3 MOSFET P-Channel")
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "9dcd50bc-2a5b-4c1c-85a6-2693e673681b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AON7407"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "3d2aa246-5aa4-41cf-94d2-ce8bcd36e1da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85e7c2b7-a3d5-470c-b626-2bd6bddc6f47")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "P-Channel 30V 30A DFN3x3 MOSFET"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "012fbb6c-bdae-4a9d-8e03-2a43c46cf514")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -2.2 -0.975)
+		(end -2.1 -0.975)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "823981ff-0e70-45f0-a982-f8df91686371")
+	)
+	(fp_line
+		(start -1.9 -1.85)
+		(end 1.9 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "29173bac-daac-453b-aec9-32a68cc0bad3")
+	)
+	(fp_line
+		(start -1.9 1.85)
+		(end -1.9 -1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "56425c5c-af2d-4387-b34c-c30586dcb3cd")
+	)
+	(fp_line
+		(start 1.9 -1.85)
+		(end 1.9 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0ffe7ad0-8767-41bb-92cc-2b7237f1a080")
+	)
+	(fp_line
+		(start 1.9 1.85)
+		(end -1.9 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef3b3f6c-fab9-47b5-8722-d911e4cc5ec4")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c35ccdc4-b21e-40fe-ac33-db2fcfc5059b")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "df6c0f9e-f1f1-4d4b-b50f-ffca4bdbca41")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eecf9a39-2a99-40b7-ba2b-733dbf223c77")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00efe082-baf9-4f67-a032-5ca0694c98dc")
+	)
+	(pad "1" smd rect
+		(at -1.4 -0.975)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ea5d9753-48f0-42b3-a59f-4e79b7c37def")
+	)
+	(pad "2" smd rect
+		(at -1.4 -0.325)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "43ffbdc5-1de6-49a6-bdb2-6cd08f158992")
+	)
+	(pad "3" smd rect
+		(at -1.4 0.325)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d30a1a1-a8fd-4dbf-b312-e4e6d0a83daf")
+	)
+	(pad "4" smd rect
+		(at -1.4 0.975)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "acd40eff-3264-4940-a35c-0105db80fb2e")
+	)
+	(pad "5" smd rect
+		(at 0.36 0)
+		(size 1.5 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "39a14029-34cb-42f0-911d-a4eca05c2f18")
+	)
+	(pad "5" smd rect
+		(at 1.4 0.975)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9fa4c56f-6c88-4727-84ee-facdccbbdb5e")
+	)
+	(pad "6" smd rect
+		(at 1.4 0.325)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "20005244-e8d9-423c-ae56-e8749de2f1f4")
+	)
+	(pad "7" smd rect
+		(at 1.4 -0.325)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5c8cf2d2-4312-4e1e-86fc-598d5422108a")
+	)
+	(pad "8" smd rect
+		(at 1.4 -0.975)
+		(size 0.5 0.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f64c0db5-dffc-404f-bbc9-6946f1aa07fa")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/CANBUS-Stepper.3dshapes/AON7407.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
