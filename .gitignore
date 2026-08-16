@@ -23,3 +23,9 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+
+# PlatformIO build output
+.pio/
+*.elf
+*.bin
+
