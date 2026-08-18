@@ -1,6 +1,6 @@
 # 📐 3D CAD STEP Models & Mechanical Integration
 
-This directory contains the exported 3D CAD models of the complete **CANBUS-Stepper v2.1** PCB assembly.
+This directory contains the exported 3D CAD models of the complete **CANBUS-Stepper v1.0** PCB assembly.
 
 ---
 

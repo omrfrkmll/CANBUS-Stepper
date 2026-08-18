@@ -1,10 +1,10 @@
 # 📄 CANBUS-Stepper Hardware Schematics
 
-This directory contains the official reference schematic diagrams for the **CANBUS-Stepper v2.1** smart closed-loop stepper motor driver board.
+This directory contains the official reference schematic diagrams for the **CANBUS-Stepper v1.0** smart closed-loop stepper motor driver board.
 
 ## 📑 Available Documentation
 
-- **Full Schematic Diagram (PDF)**: [`CANBUS_Stepper_v2.1_Schematic.pdf`](CANBUS_Stepper_v2.1_Schematic.pdf)
+- **Full Schematic Diagram (PDF)**: [`CANBUS_Stepper_v1.0_Schematic.pdf`](CANBUS_Stepper_v1.0_Schematic.pdf)
   - Sheet 1: ESP32-S3-MINI-1 Microcontroller, USB Type-C & Power OR-ing
   - Sheet 2: Trinamic TMC2209-LA Motor Driver & Current Sensing
   - Sheet 3: AS5600 12-bit Magnetic Encoder & Sensor Interfaces (Qwiic, NTC, AUX)

@@ -1,13 +1,13 @@
 # ⚡ CANBUS-Stepper
 
 <p align="center">
-  <b>ESP32-S3 Based Closed-Loop Smart CAN Bus Stepper Motor Driver Board (v2.1)</b>
+  <b>ESP32-S3 Based Closed-Loop Smart CAN Bus Stepper Motor Driver Board (v1.0)</b>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Firmware-MIT%20License-green?style=for-the-badge" alt="Firmware License"/>
   <img src="https://img.shields.io/badge/Hardware-Reference%20(CC%20BY--NC--SA%204.0)-blue?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="Hardware License"/>
-  <img src="https://img.shields.io/badge/Schematic-PDF%20v2.1-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Schematic PDF"/>
+  <img src="https://img.shields.io/badge/Schematic-PDF%20v1.0-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Schematic PDF"/>
   <img src="https://img.shields.io/badge/MCU-ESP32--S3-orange?style=for-the-badge&logo=espressif&logoColor=white" alt="MCU ESP32-S3"/>
   <img src="https://img.shields.io/badge/Driver-TMC2209--LA-007ACC?style=for-the-badge" alt="Driver TMC2209"/>
   <img src="https://img.shields.io/badge/Bus-CAN%20Bus%20%2F%20CAN%20FD-orange?style=for-the-badge" alt="Bus CAN"/>
@@ -44,8 +44,8 @@
 
 | Component | Status | Details |
 | :--- | :---: | :--- |
-| **Schematic Design** | ✅ Complete | Hierarchical schematic design, [PDF export available](docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf) |
-| **PCB Layout (v2.1)** | ✅ Complete | 2-Layer 1.6mm FR4, DRC clean, impedance-tuned CAN bus differential pairs |
+| **Schematic Design** | ✅ Complete | Hierarchical schematic design, [PDF export available](docs/schematics/CANBUS_Stepper_v1.0_Schematic.pdf) |
+| **PCB Layout (v1.0)** | ✅ Complete | 2-Layer 1.6mm FR4, DRC clean, impedance-tuned CAN bus differential pairs |
 | **Component Mapping (BOM)** | ✅ Complete | 43 unique lines / 67 components 100% mapped with LCSC part numbers |
 | **3D CAD STEP Models** | ✅ Complete | Exported 3D assembly ([`step/canbus-stepper.step`](step/canbus-stepper.step)) ready for enclosure design |
 | **Physical Prototyping** | 🔄 In Progress | Prototype PCBA fabrication & physical hardware bring-up |
@@ -109,7 +109,7 @@
   &nbsp;&nbsp;
   <img src="docs/assets/pcb_bottom.png?v=2" alt="CANBUS-Stepper PCB Bottom Side" width="48%"/>
   <br>
-  <i>Figure 1: CANBUS-Stepper v2.1 Component Layout — Top Layer (Left) & Bottom Layer (Right)</i>
+  <i>Figure 1: CANBUS-Stepper v1.0 Component Layout — Top Layer (Left) & Bottom Layer (Right)</i>
 </p>
 
 ---
@@ -119,7 +119,7 @@
 To enable seamless third-party software integration, driver development, and custom enclosure modeling, official hardware reference documents are provided:
 
 1. **Schematic Circuit Diagrams (PDF)**:
-   - Complete multi-sheet reference schematics are available in [`docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf`](docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf).
+   - Complete multi-sheet reference schematics are available in [`docs/schematics/CANBUS_Stepper_v1.0_Schematic.pdf`](docs/schematics/CANBUS_Stepper_v1.0_Schematic.pdf).
    - Details MCU pinouts, TMC2209 UART buses, CAN transceiver wiring, protection circuits, and sensor connectors.
 2. **3D Mechanical STEP Assembly**:
    - Ready-to-import 3D CAD model: [`step/canbus-stepper.step`](step/canbus-stepper.step) (28.9 MB).
@@ -138,7 +138,7 @@ CANBUS-Stepper/
 │   ├── assets/                    # 3D PCB renders, board photos, and diagrams
 │   └── schematics/                # Full PDF Schematic & Pinout reference documentation
 │       ├── README.md              # Sheet breakdown and integration guide
-│       └── CANBUS_Stepper_v2.1_Schematic.pdf
+│       └── CANBUS_Stepper_v1.0_Schematic.pdf
 ├── firmware/                      # ESP32-S3 Firmware, Protocol & SDK
 │   ├── include/                   # Drivers, control loops, and headers
 │   ├── src/                       # Motion controller, TWAI CAN, AS5600, TMC2209
