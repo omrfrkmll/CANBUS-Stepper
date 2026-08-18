@@ -5,14 +5,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Hardware-Open%20Source%20(CC%20BY--SA%204.0)-blue?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="Open Hardware"/>
   <img src="https://img.shields.io/badge/Firmware-MIT%20License-green?style=for-the-badge" alt="Firmware License"/>
-  <img src="https://img.shields.io/badge/MCU-ESP32--S3-red?style=for-the-badge&logo=espressif&logoColor=white" alt="MCU ESP32-S3"/>
+  <img src="https://img.shields.io/badge/Hardware-Reference%20(CC%20BY--NC--SA%204.0)-blue?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="Hardware License"/>
+  <img src="https://img.shields.io/badge/Schematic-PDF%20v2.1-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Schematic PDF"/>
+  <img src="https://img.shields.io/badge/MCU-ESP32--S3-orange?style=for-the-badge&logo=espressif&logoColor=white" alt="MCU ESP32-S3"/>
   <img src="https://img.shields.io/badge/Driver-TMC2209--LA-007ACC?style=for-the-badge" alt="Driver TMC2209"/>
   <img src="https://img.shields.io/badge/Bus-CAN%20Bus%20%2F%20CAN%20FD-orange?style=for-the-badge" alt="Bus CAN"/>
   <img src="https://img.shields.io/badge/Encoder-AS5600%20(12--Bit)-4BC51D?style=for-the-badge" alt="Encoder AS5600"/>
-  <img src="https://img.shields.io/badge/EDA-KiCad%208.0%20(v2.1)-314CB6?style=for-the-badge&logo=kicad&logoColor=white" alt="EDA KiCad 8.0"/>
-  <img src="https://img.shields.io/badge/PCBA-JLCPCB%20%26%20PCBWay%20Ready-success?style=for-the-badge" alt="PCBA Ready"/>
 </p>
 
 <p align="center">
@@ -20,7 +19,7 @@
   <a href="#-development-status">Development Status</a> •
   <a href="#-hardware-features--specifications">Hardware Specs</a> •
   <a href="#-pcb--hardware-preview">PCB Preview</a> •
-  <a href="#-pcb-fabrication--ordering-guide">Fabrication Guide</a> •
+  <a href="#-schematics--mechanical-cad">Schematic & CAD</a> •
   <a href="#-firmware--control-sdk">Firmware & SDK</a> •
   <a href="#-official-hardware--custom-engineering">Official Hardware & Services</a> •
   <a href="#-license">License</a>
@@ -30,7 +29,7 @@
 
 ## 📌 Overview
 
-**CANBUS-Stepper** is a high-performance open-source smart stepper motor driver board powered by the **ESP32-S3** dual-core microcontroller. Designed specifically for 3D printer toolheads, robotic actuators, AGVs, CNC axes, and industrial automation, this board integrates:
+**CANBUS-Stepper** is a high-performance smart stepper motor driver board powered by the **ESP32-S3** dual-core microcontroller. Designed specifically for 3D printer toolheads, robotic actuators, AGVs, CNC axes, and industrial automation, this board integrates:
 
 - **Ultra-Quiet Motor Drive**: Trinamic TMC2209-LA driver with StealthChop2™, SpreadCycle™, and StallGuard4™ sensorless homing.
 - **Closed-Loop Position Feedback**: High-precision AS5600 12-bit magnetic rotary encoder mounted coaxially on the bottom layer to eliminate missed steps.
@@ -45,11 +44,10 @@
 
 | Component | Status | Details |
 | :--- | :---: | :--- |
-| **Schematic Design** | ✅ Complete | KiCad 8.0/10.0 hierarchical schematic, ERC verified |
+| **Schematic Design** | ✅ Complete | Hierarchical schematic design, [PDF export available](docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf) |
 | **PCB Layout (v2.1)** | ✅ Complete | 2-Layer 1.6mm FR4, DRC clean, impedance-tuned CAN bus differential pairs |
 | **Component Mapping (BOM)** | ✅ Complete | 43 unique lines / 67 components 100% mapped with LCSC part numbers |
-| **Production Files** | ✅ Complete | Gerbers, drill files, IPC netlist, and pick-and-place files in `pcb/production/` |
-| **3D CAD STEP Models** | ✅ Complete | Exported 3D assembly (`step/canbus-stepper.step`) ready for enclosure design |
+| **3D CAD STEP Models** | ✅ Complete | Exported 3D assembly ([`step/canbus-stepper.step`](step/canbus-stepper.step)) ready for enclosure design |
 | **Physical Prototyping** | 🔄 In Progress | Prototype PCBA fabrication & physical hardware bring-up |
 | **Firmware & Control SDK** | 🔄 In Progress | ESP32-S3 TWAI CAN driver, closed-loop PID loop & Klipper node support |
 
@@ -116,53 +114,41 @@
 
 ---
 
+## 📄 Schematics & Mechanical CAD
+
+To enable seamless third-party software integration, driver development, and custom enclosure modeling, official hardware reference documents are provided:
+
+1. **Schematic Circuit Diagrams (PDF)**:
+   - Complete multi-sheet reference schematics are available in [`docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf`](docs/schematics/CANBUS_Stepper_v2.1_Schematic.pdf).
+   - Details MCU pinouts, TMC2209 UART buses, CAN transceiver wiring, protection circuits, and sensor connectors.
+2. **3D Mechanical STEP Assembly**:
+   - Ready-to-import 3D CAD model: [`step/canbus-stepper.step`](step/canbus-stepper.step) (28.9 MB).
+   - Accurate component heights, connector positions, and NEMA 17 rear mounting hole spacing (31.0mm x 31.0mm diagonal M3 holes).
+
+---
+
 ## 📁 Repository Structure
 
 ```
 CANBUS-Stepper/
 ├── README.md                      # Main project documentation & specifications
-├── LICENSE                        # CC BY-SA 4.0 (Hardware) & MIT (Software) Licenses
-├── .gitignore                     # Git rules for KiCad temporary & build files
+├── LICENSE                        # CC BY-NC-SA 4.0 (Hardware Reference) & MIT (Software)
+├── .gitignore                     # Git ignore rules
 ├── docs/
-│   └── assets/                    # 3D PCB renders, schematics, and diagrams
-├── pcb/                           # Complete KiCad 8.0/10.0 Design Source Files
-│   ├── canbus-stepper.kicad_sch   # Full hierarchical schematic design
-│   ├── canbus-stepper.kicad_pcb   # 2-Layer 1.6mm PCB layout & routing (v2.1)
-│   ├── canbus-stepper.kicad_pro   # KiCad project definition
-│   ├── CANBUS-Stepper.kicad_sym   # Project-specific schematic symbol library
-│   ├── CANBUS-Stepper.pretty/     # Custom footprint library (SMD connectors, ICs)
-│   ├── CANBUS-Stepper.3dshapes/   # Accurate 3D STEP & WRL component models
-│   ├── bom/
-│   │   └── ibom.html              # Interactive HTML BOM viewer (InteractiveHtmlBom)
-│   └── production/                # Ready-to-order manufacturing packages
-│       ├── CANBUS_Stepper_Closed-Loop_Controller_v2.1.zip # Gerbers & Drill files
-│       ├── bom.csv                # Pre-mapped LCSC Bill of Materials
-│       ├── positions.csv          # Centroid / Pick-and-place (CPL) file
-│       └── netlist.ipc            # IPC-D-356 netlist verification
+│   ├── assets/                    # 3D PCB renders, board photos, and diagrams
+│   └── schematics/                # Full PDF Schematic & Pinout reference documentation
+│       ├── README.md              # Sheet breakdown and integration guide
+│       └── CANBUS_Stepper_v2.1_Schematic.pdf
 ├── firmware/                      # ESP32-S3 Firmware, Protocol & SDK
+│   ├── include/                   # Drivers, control loops, and headers
+│   ├── src/                       # Motion controller, TWAI CAN, AS5600, TMC2209
+│   ├── klipper/                   # Klipper toolhead configuration & docs
+│   ├── platformio.ini             # PlatformIO build configuration
 │   └── README.md                  # Firmware architecture & roadmap
 └── step/                          # 3D CAD STEP Files for mechanical integration
     ├── canbus-stepper.step        # Full 3D PCB assembly STEP model (28.9 MB)
     └── README.md                  # Mounting specifications & CAD guide
 ```
-
----
-
-## 🏭 PCB Fabrication & Ordering Guide
-
-The project is **100% turnkey ready** for automated SMT assembly at **JLCPCB**, **PCBWay**, or standard PCBA houses:
-
-1. **Download the Production Package**:
-   - Gerber & Drill Archive: [`pcb/production/CANBUS_Stepper_Closed-Loop_Controller_v2.1.zip`](pcb/production/CANBUS_Stepper_Closed-Loop_Controller_v2.1.zip)
-   - BOM File: [`pcb/production/bom.csv`](pcb/production/bom.csv) (all 43 lines pre-assigned with verified LCSC part codes)
-   - Pick-and-Place (CPL): [`pcb/production/positions.csv`](pcb/production/positions.csv)
-2. **Interactive BOM Inspection**:
-   - Open [`pcb/bom/ibom.html`](pcb/bom/ibom.html) in your browser to interactively highlight part placements, footprints, and designators during manual inspection or prototyping.
-3. **Recommended PCB Specs**:
-   - **Layers**: 2 Layers
-   - **Thickness**: 1.6mm (FR4 TG150+)
-   - **Copper Weight**: 1oz (35µm)
-   - **Surface Finish**: ENIG (Electroless Nickel Immersion Gold) recommended for QFN/DFN coplanarity, or LeadFree HASL.
 
 ---
 
@@ -180,7 +166,7 @@ The ESP32-S3 microcontroller firmware is developed under `firmware/` and targets
 
 ## 🛒 Official Hardware, Kits & Custom Engineering
 
-While this project is fully open source, you can support the creator and ensure guaranteed hardware quality through **Official Pre-Assembled Hardware & Engineering Services**:
+Ensure guaranteed hardware quality and support ongoing development through **Official Pre-Assembled Hardware & Engineering Services**:
 
 ### 📦 Official Plug-and-Play Kits
 - 🛠️ **Factory-Tested Boards**: 100% SMT assembled, flashed with factory test firmware, and validated under motor load.
@@ -199,14 +185,15 @@ Need customized hardware or industrial integration for your commercial robotics 
 
 ## 📜 License
 
-This project is licensed under standard open-source licenses:
+This project follows a **Hybrid Open-Software & Reference-Hardware** model:
 
-- 🛡️ **Hardware (Schematics, PCB, BOM, CAD & 3D Models)**: [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
-- 💻 **Firmware & Software**: [MIT License](LICENSE).
-- 🏷️ **Trademarks & Official Branding**: The "CANBUS-Stepper" and "ILTERAY" names and logos represent official tested hardware. Compatible community derivatives are welcomed under CC BY-SA 4.0.
+- 🛡️ **Hardware Reference (Schematics, Pinouts, Mechanical Specs & 3D STEP)**: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- 💻 **Firmware & Software Stack**: [MIT License](LICENSE).
+- 🏷️ **Trademarks & Official Branding**: The "CANBUS-Stepper" and "ILTERAY" names and logos represent official tested hardware.
 
 ---
 
 <p align="center">
   <b>CANBUS-Stepper</b> • Open-Source Smart Motion Control
 </p>
+

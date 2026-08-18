@@ -1,3 +1,7 @@
+# Hardware & PCB design files (tracked in independent standalone hardware repository)
+/pcb/
+pcb/
+
 # KiCad temporary, backup & report files
 *.bak
 *-backups/
@@ -28,4 +32,7 @@ __pycache__/
 .pio/
 *.elf
 *.bin
+
+# Local Inventory & Cost tracking
+inventory/
 

@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "CANBUS-Stepper")(type "KiCad")(uri "${KIPRJMOD}/CANBUS-Stepper.kicad_sym")(options "")(descr "Project Custom Symbols Library"))
-)

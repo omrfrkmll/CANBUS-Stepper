@@ -1,32 +1,36 @@
-Open Source Hardware & Software License
+Open Source Software & Reference Hardware License
 ===========================================================================
 CANBUS-Stepper Project
 ===========================================================================
 
-1. HARDWARE LICENSE (Schematics, PCB Layouts & 3D Models)
+1. HARDWARE REFERENCE LICENSE (Schematics, Pinouts, 3D CAD & Documentation)
 ---------------------------------------------------------------------------
-The hardware design files (schematics, PCB layouts, Gerber/fabrication files, 
-BOM, and 3D CAD models) are licensed under the Creative Commons Attribution-
-ShareAlike 4.0 International License (CC BY-SA 4.0).
+The public hardware reference files (schematics in PDF/image format, pinout 
+diagrams, mechanical specifications, and 3D CAD STEP models) are licensed under 
+the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International 
+License (CC BY-NC-SA 4.0).
 
 You are free to:
-- Share: Copy and redistribute the material in any medium or format.
-- Adapt: Remix, transform, and build upon the material for any purpose, 
-  even commercially.
+- Share: Copy and redistribute the reference material for evaluation, education,
+  and personal/research development.
+- Adapt: Design compatible carrier boards, motor mounts, 3D printed enclosures,
+  and integration adapters.
 
 Under the following terms:
-- Attribution (BY): You must give appropriate credit, provide a link to the 
-  license, and indicate if changes were made.
-- ShareAlike (SA): If you remix, transform, or build upon the material, you 
-  must distribute your contributions under the same license as the original.
+- Attribution (BY): You must give appropriate credit to the creator (ILTERAY / omrfrkmll).
+- NonCommercial (NC): You may not use the hardware design or reference material 
+  for commercial mass manufacturing without explicit authorization.
+- ShareAlike (SA): If you remix or build upon the reference material, you must 
+  distribute your contributions under the same license.
 
-Full License Text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Full License Text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 ---------------------------------------------------------------------------
 2. FIRMWARE & SOFTWARE LICENSE (Firmware, SDK, Tools & Libraries)
 ---------------------------------------------------------------------------
 The software source code (microcontroller firmware, CAN bus protocol libraries, 
-SDK, and configuration scripts) is licensed under the MIT License:
+SDK, Klipper configurations, ROS2 drivers, and tools) is licensed under the 
+MIT License:
 
 Copyright (c) 2026 ILTERAY / omrfrkmll
 
@@ -49,13 +53,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ---------------------------------------------------------------------------
-3. TRADEMARK & COMMERCIAL SERVICES
+3. TRADEMARK & OFFICIAL HARDWARE MANUFACTURING
 ---------------------------------------------------------------------------
 - The names "CANBUS-Stepper", "ILTERAY", and associated logos represent official 
   tested products and engineering quality.
-- While third parties are free to manufacture and sell compatible hardware 
-  under CC BY-SA 4.0, they may not market them as "Official CANBUS-Stepper" 
-  without prior written permission.
-- For pre-assembled & tested official boards, custom B2B robotics engineering, 
-  or enterprise integration, please contact the repository maintainers.
+- PCB layout source files, Gerbers, and Pick-and-Place manufacturing packages 
+  are maintained in internal repositories for quality-assured production.
+- For pre-assembled & tested official boards, volume PCBA batch manufacturing, 
+  custom B2B robotics engineering, or commercial licensing, please contact 
+  the repository maintainers.
 ===========================================================================
