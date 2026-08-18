@@ -95,7 +95,7 @@
 | **Motor Output** | JST PH 4-Pin SMD (S4B-PH-SM4-K-TB) | 4-wire bipolar stepper motor phases (A1, A2, B1, B2) |
 | **Qwiic / I2C Port** | JST SH 4-Pin (1.0mm) Horizontal | External I2C sensors, OLED displays & expansions (3.3V, GND, SDA, SCL) |
 | **AUX Port** | JST SH 4-Pin (1.0mm) Horizontal | Auxiliary GPIOs for endstops, bed probes, or toolhead sensors |
-| **NTC / Sensor Ports** | 2x JST SH 2-Pin (SM02B-SRSS-TB) | Dedicated NTC thermistor input & endstop trigger |
+| **CAN Bus In / Out** | 2x JST SH 2-Pin (SM02B-SRSS-TB) | CAN Bus differential input & daisy-chain pass-through (CAN_H, CAN_L) |
 | **OLED Display FPC** | Amphenol SFV30R-2STBE1HLF (30-Pin 0.5mm) | Bare COG OLED display panel interface (SSD1306) |
 | **CAN Termination** | SMD Slide Switch (`MSK12C01G15-W`) | Switchable 120Ω CAN bus termination resistor |
 | **Buttons & Indicators** | 2x Tactile Push-Buttons + 3x LEDs | RESET, BOOT/User buttons; Power, Driver, and CAN Status LEDs |
