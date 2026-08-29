@@ -71,7 +71,7 @@ void handleSerialCommands() {
                 Serial.printf("[CMD] PID Gains set: Kp=%.2f, Ki=%.3f, Kd=%.3f\n", kp, ki, kd);
             }
         } else if (cmd.equalsIgnoreCase("STATUS") || cmd.equalsIgnoreCase("?")) {
-            Serial.println("\n========== CANBUS-Stepper v1.0 Status ==========");
+            Serial.println("\n========== CANBUS-Stepper v1.1 Status ==========");
             Serial.printf("Encoder Angle: %.2f deg (Raw: %d, Turns: %d)\n", 
                           encoder.getAngleDegrees(), encoder.getRawAngle(), encoder.getMultiTurnAngle() / 4096);
             Serial.printf("Target Position: %.2f deg | Error: %.2f deg\n", 
@@ -95,7 +95,7 @@ void setup() {
     delay(500);
 
     Serial.println("\n=======================================================");
-    Serial.println("⚡ CANBUS-Stepper v1.0 Smart Closed-Loop Controller");
+    Serial.println("⚡ CANBUS-Stepper v1.1 Smart Closed-Loop Controller");
     Serial.println("   ESP32-S3 + TMC2209 + AS5600 + TCAN1051V");
     Serial.println("=======================================================");
 

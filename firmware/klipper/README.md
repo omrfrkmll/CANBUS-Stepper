@@ -1,6 +1,6 @@
 # 🖨️ Klipper & Katapult (CanBoot) Setup Guide
 
-This guide explains how to compile and flash **Klipper** or **Katapult (CanBoot)** onto the **CANBUS-Stepper v1.0** board to use it as a high-speed CAN bus stepper / toolhead node in 3D printers and CNC machines.
+This guide explains how to compile and flash **Klipper** or **Katapult (CanBoot)** onto the **CANBUS-Stepper v1.1** board to use it as a high-speed CAN bus stepper / toolhead node in 3D printers and CNC machines.
 
 ---
 

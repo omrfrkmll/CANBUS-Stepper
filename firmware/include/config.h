@@ -3,7 +3,7 @@
 #include <Arduino.h>
 
 // =============================================================================
-// CANBUS-Stepper v1.0 Hardware Configuration & Pinout Map
+// CANBUS-Stepper v1.1 Hardware Configuration & Pinout Map
 // =============================================================================
 
 // --- TMC2209-LA Stepper Driver Pins ---

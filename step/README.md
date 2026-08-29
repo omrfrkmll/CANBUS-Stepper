@@ -1,12 +1,13 @@
 # 📐 3D CAD STEP Models & Mechanical Integration
 
-This directory contains the exported 3D CAD models of the complete **CANBUS-Stepper v1.0** PCB assembly.
+This directory contains the exported 3D CAD models of the **CANBUS-Stepper** PCB assemblies.
 
 ---
 
 ## 📦 Files Included
 
-- **`canbus-stepper.step`** (28.9 MB): High-detail 3D STEP assembly containing accurate 3D CAD models of all surface-mount components, connectors (USB-C, Molex Micro-Fit 3.0, JST PH/SH, FPC), tactile switches, and PCB routing geometry.
+- **`canbus-stepper-v1.1.step`** (Latest): High-detail 3D STEP assembly containing accurate 3D CAD models of all surface-mount components, connectors (USB-C, Molex Micro-Fit 3.0, JST PH/SH, FPC), tactile switches, and PCB routing geometry for v1.1 production release.
+- **`canbus-stepper-v1.0.step`** (Legacy): Initial v1.0 hardware release 3D CAD STEP model.
 
 ---
 
