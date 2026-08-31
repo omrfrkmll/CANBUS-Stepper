@@ -77,7 +77,7 @@
 - **Bulk Filtering**: 100µF / 35V Low-ESR aluminum electrolytic bulk capacitor (6.3mm x 5.8mm SMD) for motor switching current ripple suppression.
 
 ### 🛡️ Protection & Safety Architecture
-- **Reverse Polarity Protection**: **Alpha & Omega AON7407** (-30V / -30A, 8.5mΩ R_DS(on) P-Channel MOSFET) with Zener gate clamping.
+- **Reverse Polarity Protection**: **Alpha & Omega AON7410** (-30V / -30A, 8.5mΩ R_DS(on) P-Channel MOSFET) with Zener gate clamping.
 - **Overcurrent Protection**:
   - 1.5A / 24V Resettable PPTC fuse (`1210L150/24WR`) on main 24V DC input rail.
   - 500mA / 16V Resettable PPTC fuse (`SMDH0805B050TF`) on USB VBUS power line.
