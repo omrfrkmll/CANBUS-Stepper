@@ -15,7 +15,7 @@ CANBusProtocol::CANBusProtocol(MotionController &motion, EncoderAS5600 &encoder,
 bool CANBusProtocol::begin(uint32_t baudrate, uint32_t node_id) {
     _node_id = node_id;
 
-    // Enable TCAN1051V Transceiver (CAN_STB LOW = Normal Active Mode)
+    // Enable TCAN3413 Transceiver (CAN_STB LOW = Normal Active Mode)
     pinMode(PIN_CAN_STB, OUTPUT);
     digitalWrite(PIN_CAN_STB, LOW);
 

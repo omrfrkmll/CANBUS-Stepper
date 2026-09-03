@@ -9,7 +9,7 @@ This directory contains the official reference schematic diagrams for the **CANB
   - Sheet 1: ESP32-S3-MINI-1 Microcontroller, USB Type-C & Power OR-ing
   - Sheet 2: Trinamic TMC2209-LA Motor Driver & Current Sensing
   - Sheet 3: AS5600 12-bit Magnetic Encoder & Sensor Interfaces (Qwiic, NTC, AUX)
-  - Sheet 4: TI TCAN1051V CAN FD Transceiver & 120Ω Switchable Termination
+  - Sheet 4: TI TCAN3413 CAN FD Transceiver & 120Ω Switchable Termination
   - Sheet 5: TI LMR33630 36V/3A DC-DC Buck Converter, Protection & 3.3V LDO
 - **v1.0 Schematic Diagram (PDF - Legacy)**: [`CANBUS_Stepper_v1.0_Schematic.pdf`](CANBUS_Stepper_v1.0_Schematic.pdf)
 

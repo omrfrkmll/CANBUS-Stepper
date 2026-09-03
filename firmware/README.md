@@ -10,7 +10,7 @@ This directory contains the firmware architecture, CAN bus communication protoco
 - **Framework**: ESP-IDF v5.x / Arduino ESP32 Core
 - **Motor Control**: Trinamic TMC2209-LA via UART (microstepping, StealthChop2, StallGuard4 sensorless homing) + Step/Dir pulse generation.
 - **Closed-Loop Feedback**: AS5600 12-Bit Magnetic Rotary Encoder via fast hardware I2C (400kHz), running high-frequency angle reading & real-time PID position error correction.
-- **Communication Stack**: ESP32-S3 Native TWAI (Two-Wire Automotive Interface) CAN Bus driver via TI TCAN1051V transceiver.
+- **Communication Stack**: ESP32-S3 Native TWAI (Two-Wire Automotive Interface) CAN Bus driver via TI TCAN3413 transceiver.
 
 ---
 

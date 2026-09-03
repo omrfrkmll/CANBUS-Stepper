@@ -96,7 +96,7 @@ void setup() {
 
     Serial.println("\n=======================================================");
     Serial.println("⚡ CANBUS-Stepper v1.1 Smart Closed-Loop Controller");
-    Serial.println("   ESP32-S3 + TMC2209 + AS5600 + TCAN1051V");
+    Serial.println("   ESP32-S3 + TMC2209 + AS5600 + TCAN3413");
     Serial.println("=======================================================");
 
     // 2. Setup User GPIOs
@@ -137,9 +137,9 @@ void setup() {
     // 7. Initialize TWAI CAN Bus Protocol
     bool can_ok = can_bus.begin(DEFAULT_CAN_BAUD, DEFAULT_CAN_NODE_ID);
     if (can_ok) {
-        Serial.printf("[INIT] TCAN1051V CAN Bus: RUNNING @ %d bps (Node ID: 0x%X)\n", DEFAULT_CAN_BAUD, DEFAULT_CAN_NODE_ID);
+        Serial.printf("[INIT] TCAN3413 CAN Bus: RUNNING @ %d bps (Node ID: 0x%X)\n", DEFAULT_CAN_BAUD, DEFAULT_CAN_NODE_ID);
     } else {
-        Serial.println("[INIT] TCAN1051V CAN Bus: Failed to start TWAI driver");
+        Serial.println("[INIT] TCAN3413 CAN Bus: Failed to start TWAI driver");
     }
 
     // 8. Launch High-Priority Motion Control Task on Core 1

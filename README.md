@@ -33,7 +33,7 @@
 
 - **Ultra-Quiet Motor Drive**: Trinamic TMC2209-LA driver with StealthChop2™, SpreadCycle™, and StallGuard4™ sensorless homing.
 - **Closed-Loop Position Feedback**: High-precision AS5600 12-bit magnetic rotary encoder mounted coaxially on the bottom layer to eliminate missed steps.
-- **Native CAN Bus Communication**: Automotive-grade TI TCAN1051V transceiver supporting high-speed CAN and CAN FD logic.
+- **Native CAN Bus Communication**: Automotive-grade TI TCAN3413 transceiver supporting high-speed CAN and CAN FD logic with 3.3V logic.
 - **Industrial Wide-Input Power**: High-efficiency TI LMR33630 36V / 3A synchronous step-down DC-DC buck regulator + ultra-low-noise 3.3V LDO.
 - **Multi-Stage Protection Circuits**: Reverse polarity P-MOSFET, transient voltage suppressors (TVS), ESD diode arrays, and resettable PPTC fuses.
 - **Compact NEMA 17 Footprint**: Fits directly onto the rear face of standard 42mm x 42mm NEMA 17 stepper motors (40.3mm x 40.3mm profile with corner chamfers and M3 mounting holes).
@@ -44,10 +44,10 @@
 
 | Component | Status | Details |
 | :--- | :---: | :--- |
-| **Schematic Design** | ✅ Complete | Hierarchical schematic design, [PDF export available](docs/schematics/CANBUS_Stepper_v1.0_Schematic.pdf) |
+| **Schematic Design** | ✅ Complete | Hierarchical schematic design, [PDF export available](docs/schematics/CANBUS_Stepper_v1.1_Schematic.pdf) |
 | **PCB Layout (v1.1)** | ✅ Complete | 2-Layer 1.6mm FR4, DRC clean, planar ESP32-S3 pin routing |
 | **Component Mapping (BOM)** | ✅ Complete | 43 unique lines / 67 components 100% mapped with LCSC part numbers |
-| **3D CAD STEP Models** | ✅ Complete | Exported 3D assembly ([`step/canbus-stepper.step`](step/canbus-stepper.step)) ready for enclosure design |
+| **3D CAD STEP Models** | ✅ Complete | Exported 3D assembly ([`step/canbus-stepper-v1.1.step`](step/canbus-stepper-v1.1.step)) ready for enclosure design |
 | **Physical Prototyping** | 🔄 In Progress | Prototype PCBA fabrication & physical hardware bring-up |
 | **Firmware & Control SDK** | 🔄 In Progress | ESP32-S3 TWAI CAN driver, closed-loop PID loop & Klipper node support |
 
@@ -71,13 +71,13 @@
   - Interface: Fast-mode I2C (400 kHz).
 
 ### 🌐 Bus Communication & Power Regulation
-- **CAN Bus Transceiver**: **TI TCAN1051VDRBRQ1** 5V CAN FD Transceiver with 3.3V V_IO logic interface and ±58V bus fault protection.
-- **Main DC-DC Buck Converter**: **TI LMR33630CRNXR** Synchronous Step-Down Regulator (3.8V – 36V input range, 3.0A continuous output @ 2.1 MHz switching frequency).
+- **CAN Bus Transceiver**: **TI TCAN3413DRBR** 3.3V CAN FD Transceiver with 3.3V V_IO logic interface and ±58V bus fault protection.
+- **Main DC-DC Buck Converter**: **TI LMR33630CRNXR** Synchronous Step-Down Regulator (3.8V – 36V input range, 3.0A continuous output @ 2.1 MHz switching frequency) with **Changjiang FNR4020S4R7MT** (4.7µH / 2A) shielded power inductor.
 - **MCU & Analog LDO**: **TI TLV75533PDRVR** 500mA ultra-low-dropout 3.3V regulator providing clean power to ESP32-S3 and sensors.
 - **Bulk Filtering**: 100µF / 35V Low-ESR aluminum electrolytic bulk capacitor (6.3mm x 5.8mm SMD) for motor switching current ripple suppression.
 
 ### 🛡️ Protection & Safety Architecture
-- **Reverse Polarity Protection**: **Alpha & Omega AON7410** (-30V / -30A, 8.5mΩ R_DS(on) P-Channel MOSFET) with Zener gate clamping.
+- **Reverse Polarity Protection**: **AON7403** (-30V / -50A, 8.5mΩ R_DS(on) P-Channel MOSFET) with Zener gate clamping.
 - **Overcurrent Protection**:
   - 1.5A / 24V Resettable PPTC fuse (`1210L150/24WR`) on main 24V DC input rail.
   - 500mA / 16V Resettable PPTC fuse (`SMDH0805B050TF`) on USB VBUS power line.

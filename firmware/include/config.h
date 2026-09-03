@@ -29,7 +29,7 @@
 #define ENCODER_RESOLUTION  4096   // 12-bit (0 - 4095)
 #define DEG_PER_COUNT       (360.0f / 4096.0f) // 0.08789 degrees per count
 
-// --- CAN Bus / TWAI Transceiver (TI TCAN1051V) ---
+// --- CAN Bus / TWAI Transceiver (TI TCAN3413) ---
 #define PIN_CAN_TX          38  // ESP32 TWAI TX (IO38 / Pad 34)
 #define PIN_CAN_RX          37  // ESP32 TWAI RX (IO37 / Pad 33)
 #define PIN_CAN_STB         39  // Standby pin (LOW = Normal Mode, HIGH = Standby) (IO39 / Pad 35)
